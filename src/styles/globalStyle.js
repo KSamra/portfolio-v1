@@ -10,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
+    font-size: 62.5%;
   }
 
   body {
@@ -23,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.RobotoMono};
 
     line-height: 1.3;
+    font-size: 1.6rem;
   }
 
   a {
@@ -43,5 +45,6 @@ export const GlobalStyle = createGlobalStyle`
   section,
   summary {
     display: block;
+    box-sizing: border-box;
   }
 `;
