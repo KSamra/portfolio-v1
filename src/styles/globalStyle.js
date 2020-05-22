@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: ${fonts.RobotoMono};
-    font-weight: 700;
+
     line-height: 1.3;
   }
 
