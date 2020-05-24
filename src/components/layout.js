@@ -12,6 +12,7 @@ import {GlobalStyle} from '../styles/globalStyle';
 
 // import Header from "./header"
 import Header from '../styles/blocks/header/index';
+import MobileNav from '../styles/blocks/mobileHeader/index';
 // import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -29,10 +30,11 @@ const Layout = ({ children }) => {
     <div>
       <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <Header>
+      {/* <Header> */}
         {/* <Header.Title siteTitle={data.site.siteMetadata.title}/> */}
-        <Header.Nav />
-      </Header>
+        {/* <Header.Nav /> */}
+      {/* </Header> */}
+      <MobileNav />
       <div
         style={{
           margin: `0 auto`,
