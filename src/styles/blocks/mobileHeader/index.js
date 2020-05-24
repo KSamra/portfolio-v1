@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {SLink} from '../../elements/Links';
 import { breakpoints } from '../../theme';
 import Hamburger from './Hamburger';
-
+import Menu from './Menu';
 
 const MobileNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,6 +16,10 @@ const MobileNav = () => {
     <Header>
       <SLink to="/" color="white">Logo</SLink>
       <Hamburger menuOpen={menuOpen} clickHandler={handleClick}/>
+
+      {/* Try with a conditional render but this may not be smooth enough.
+          If so, let's adjust using css and hide it with some translations and perhaps the display property */}
+      {menuOpen ? <Menu/> : null}
     </Header>
   )
 }
