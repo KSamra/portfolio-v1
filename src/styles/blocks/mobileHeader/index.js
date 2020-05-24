@@ -14,7 +14,7 @@ const MobileNav = () => {
   console.log('Mobile nav open = ', menuOpen);
   return (
     <Header>
-      <SLink to="/">Logo</SLink>
+      <SLink to="/" color="white">Logo</SLink>
       <Hamburger menuOpen={menuOpen} clickHandler={handleClick}/>
     </Header>
   )
@@ -26,11 +26,11 @@ const Header = styled.header`
   @media ${breakpoints.lg} {
     display: none;
   }
-
+  padding: 0 1rem;
   height: 3rem;
   /* position: fixed */
   width: 100%;
-  background: pink;
+  /* background: pink; */
   border-bottom: blue;
   z-index: 10;
   display: flex;
