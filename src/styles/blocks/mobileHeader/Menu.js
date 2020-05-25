@@ -26,7 +26,7 @@ const MenuLinks = styled.nav`
   justify-content: center;
   align-items: center;
   background: white;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   top: 0;
   right: 0;
@@ -34,7 +34,6 @@ const MenuLinks = styled.nav`
   width: 50%;
   transition: transform 300ms;
   transform: ${({isOpen}) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
-  overflow-x: hidden;
 `;
 
 const StyledList = styled.ul`
