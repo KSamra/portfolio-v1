@@ -19,7 +19,7 @@ const MobileNav = () => {
 
       {/* Try with a conditional render but this may not be smooth enough.
           If so, let's adjust using css and hide it with some translations and perhaps the display property */}
-      {menuOpen ? <Menu/> : null}
+      <Menu isOpen={menuOpen}/>
     </Header>
   )
 }

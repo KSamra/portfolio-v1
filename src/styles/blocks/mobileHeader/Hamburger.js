@@ -23,6 +23,14 @@ const HamburgerButton = styled.button`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 12;
+
+  :focus {
+    outline: none;
+  }
 `;
 
 const Icon = styled.div`
