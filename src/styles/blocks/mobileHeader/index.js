@@ -4,6 +4,7 @@ import {SLink} from '../../elements/Links';
 import { breakpoints } from '../../theme';
 import Hamburger from './Hamburger';
 import Menu from './Menu';
+import Backdrop from './Backdrop';
 
 const MobileNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ const MobileNav = () => {
           If so, let's adjust using css and hide it with some translations and perhaps the display property */}
       {/* {menuOpen ? <Menu isOpen={menuOpen}/> : null} */}
       <Menu isOpen={menuOpen} />
+      <Backdrop isOpen={menuOpen} clickHandler={handleClick} />
     </Header>
   )
 }

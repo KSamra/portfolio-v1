@@ -7,10 +7,10 @@ const Menu = ({isOpen}) => {
   return (
     <MenuLinks isOpen={isOpen}>
       <StyledList>
-        <Link to="/#about">About</Link>
-        <Link to="/#projects">Projects</Link>
-        <Link to="/#contact">Contact</Link>
-        <Link to="/resume">Resume</Link>
+        <NavListItem to="/#about">About</NavListItem>
+        <NavListItem to="/#projects">Projects</NavListItem>
+        <NavListItem to="/#contact">Contact</NavListItem>
+        <NavListItem to="/page-2">Resume</NavListItem>
       </StyledList>
     </MenuLinks>
     
@@ -25,7 +25,7 @@ const MenuLinks = styled.nav`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: #172a45;
   position: fixed;
   z-index: 5;
   top: 0;
@@ -38,10 +38,21 @@ const MenuLinks = styled.nav`
 
 const StyledList = styled.ul`
   display: flex;
-  justify-content: center;
+  height: 50%;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   list-style: none;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 
   
+`;
+
+const NavListItem = styled(Link)`
+  font-size: 2rem;
+  /* margin-bottom: 2rem; */
+  color: rgb(136, 146, 176);
+
 `;
