@@ -13,6 +13,8 @@ import {GlobalStyle} from '../styles/globalStyle';
 // import Header from "./header"
 import Header from '../styles/blocks/header/index';
 import MobileNav from '../styles/blocks/mobileHeader/index';
+import {Center} from '../styles/theme';
+
 // import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -35,20 +37,14 @@ const Layout = ({ children }) => {
         <Header.Nav />
       </Header>
       <MobileNav />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <Center>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
+      </Center>
     </div>
   )
 }

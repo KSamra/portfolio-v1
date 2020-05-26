@@ -1,5 +1,7 @@
+import styled from 'styled-components';
 
-  export const fonts = {
+
+export const fonts = {
     RobotoMono: 'Roboto Mono, Lucida Console, Monaco, monospace'
   }
 
@@ -16,4 +18,10 @@ export const breakpoints = {
   md: `(min-width: ${points.md})`,
   lg: `(min-width: ${points.lg})`,
   xl: `(min-width: ${points.xl})`,
-}
+};
+
+export const Center = styled.div`
+  margin: 0 auto;
+  max-width: ${points.lg};
+  padding: 0 1.0875rem 1.45rem;
+`;
