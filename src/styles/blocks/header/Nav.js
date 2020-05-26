@@ -6,23 +6,24 @@ const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: palegoldenrod;
   flex-wrap: nowrap;
 `;
 
 const NavList = styled.ul`
   list-style: none;
+  font-size: 2rem;
 `;
+
 
 
 
 const Nav = () => (
   <NavWrapper>
     <NavList>
-      <ListLink to="/#">0.1 About</ListLink>
-      <ListLink to="/#">0.1 About</ListLink>
-      <ListLink to="/#">0.1 About</ListLink>
-      <ListLink to="/#">0.1 About</ListLink>
+      <ListLink color='white' to="/#"> About</ListLink>
+      <ListLink color='white' to="/#">Projects</ListLink>
+      <ListLink color='white' to="/#">Resume</ListLink>
+      <ListLink color='white' to="/#">Contact</ListLink>
     </NavList>
     
   </NavWrapper>

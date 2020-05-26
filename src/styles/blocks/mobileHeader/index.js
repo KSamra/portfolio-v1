@@ -30,6 +30,7 @@ const MobileNav = () => {
 export default MobileNav;
 
 const Header = styled.header`
+
   @media ${breakpoints.lg} {
     display: none;
   }

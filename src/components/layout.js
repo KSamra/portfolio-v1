@@ -30,10 +30,10 @@ const Layout = ({ children }) => {
     <div>
       <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      {/* <Header> */}
-        {/* <Header.Title siteTitle={data.site.siteMetadata.title}/> */}
-        {/* <Header.Nav /> */}
-      {/* </Header> */}
+      <Header>
+        <Header.Title siteTitle={data.site.siteMetadata.title}/>
+        <Header.Nav />
+      </Header>
       <MobileNav />
       <div
         style={{

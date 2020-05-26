@@ -4,6 +4,7 @@ import React from 'react';
 
 
 const Text = styled.h1`
+  color: white;
   margin: 0;
 `;
 
