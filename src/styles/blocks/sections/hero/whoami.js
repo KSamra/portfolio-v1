@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Section from '../section';
+import { Section }from '../section';
 import React from 'react';
 
 const Intro = styled.h2`

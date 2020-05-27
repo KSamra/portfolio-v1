@@ -6,7 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Section from '../styles/blocks/sections/section';
 import WhoAmI from '../styles/blocks/sections/hero/whoami';
-
+import Projects from '../styles/blocks/sections/projects/projects';
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +18,7 @@ const IndexPage = () => (
     </Section> */}
 
     <WhoAmI />
-    
+    <Projects />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
