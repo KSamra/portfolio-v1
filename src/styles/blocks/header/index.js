@@ -7,7 +7,6 @@ const Header = styled.header`
   display: none;
   @media ${breakpoints.lg} {
     width: 100vw;
-    margin-bottom: 10rem;
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
