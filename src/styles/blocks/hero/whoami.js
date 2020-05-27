@@ -12,7 +12,7 @@ const HeroName = styled.h1`
   font-weight: 700;
   color: white;
   margin: 1rem 0;
-  font-size: 4rem;
+  font-size: 8rem;
 
 `;
 
@@ -20,12 +20,23 @@ const About = styled.h3`
   color: goldenrod;
 `;
 
+const MoreAbout = styled(About)`
+  color: lightgoldenrodyellow;
+`
 
 const WhoAmI = () => (
   <Section>
-    <Intro>Hello My Name is</Intro>
+    <Intro>Hello My Name Is</Intro>
     <HeroName>Kavan Samra</HeroName>
-    <About>I build tings</About>
+    <About>I'm a software developer</About>
+    <MoreAbout>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+      deserunt mollit anim id est laborum."
+    </MoreAbout>
   </Section>
 )
 

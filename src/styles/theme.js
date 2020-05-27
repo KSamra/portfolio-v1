@@ -23,5 +23,9 @@ export const breakpoints = {
 export const Center = styled.div`
   margin: 0 auto;
   max-width: ${points.lg};
-  padding: 0 1.0875rem 1.45rem;
+  padding: 0 5rem 5rem;
+
+  @media ${breakpoints.lg} {
+    padding: 0 1.0875rem 1.45rem;
+  }
 `;
