@@ -4,21 +4,20 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Section from '../styles/blocks/section';
+import WhoAmI from '../styles/blocks/hero/whoami';
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Kavan Samra" />
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center'
-
-    }}>
+    {/* <Section>
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
-    </div>
+    </Section> */}
+
+    <WhoAmI />
     
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
