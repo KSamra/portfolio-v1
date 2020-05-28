@@ -10,7 +10,14 @@ import Projects from '../styles/blocks/sections/projects/projects';
 
 const projectData = [
   {
+    id: 0,
     title: "Pokedex",
+    desc: "This was the first solo project I made using React",
+    image: "none"
+  },
+  {
+    id: 2,
+    title: "Bloop",
     desc: "This was the first solo project I made using React",
     image: "none"
   }

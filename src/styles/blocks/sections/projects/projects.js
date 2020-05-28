@@ -20,7 +20,7 @@ const ProjectImage = () => {
     query {
       imageOne: file(relativePath: { eq: "Pokedex.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -39,11 +39,28 @@ const ProjectTitle = styled.h3`
 
 `;
 
+const ProjectContainer = styled.div`
+  border: 1px solid red;
+  margin-bottom: 2rem;
+  width: 100%;
+`;
+
+
+
 
 const Projects = ({projects}) => {
   
   console.log(projects)
 
+  const projectList = projects.map(element => {
+    return (
+      <ProjectContainer id={element.id}>
+        <ProjectTitle>{element.title}</ProjectTitle>
+        <ProjectImage />
+        <p>{element.desc}</p>
+      </ProjectContainer>
+    )
+  });
   return (
     <Section>
       <SectionTitle>
@@ -55,10 +72,7 @@ const Projects = ({projects}) => {
       </p>
       <Section.Spacer />
 
-      <ProjectTitle>0.1 Pokedex</ProjectTitle>
-      <div style={{ maxWidth: `1000px`, marginBottom: `1.45rem` }}>
-        <ProjectImage />
-      </div>
+      {projectList}
     </Section>
   )
 };
