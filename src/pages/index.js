@@ -8,6 +8,14 @@ import Section from '../styles/blocks/sections/section';
 import WhoAmI from '../styles/blocks/sections/hero/whoami';
 import Projects from '../styles/blocks/sections/projects/projects';
 
+const projectData = [
+  {
+    title: "Pokedex",
+    desc: "This was the first solo project I made using React",
+    image: "none"
+  }
+]
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Kavan Samra" />
@@ -18,7 +26,7 @@ const IndexPage = () => (
     </Section> */}
 
     <WhoAmI />
-    <Projects />
+    <Projects projects={projectData} />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
