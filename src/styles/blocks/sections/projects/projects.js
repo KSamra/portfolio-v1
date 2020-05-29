@@ -20,7 +20,7 @@ const ProjectImage = () => {
     query {
       imageOne: file(relativePath: { eq: "Pokedex.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 30) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -40,11 +40,30 @@ const ProjectTitle = styled.h3`
 `;
 
 const ProjectContainer = styled.div`
-  border: 1px solid red;
   margin-bottom: 2rem;
   width: 100%;
 `;
 
+const Image = styled(ProjectImage)`
+  object-fit: cover;
+  width: 50%;
+ `;
+
+const Description = styled.div`
+  width: 50%;
+  margin-right: 1rem;
+`;
+
+const ImageContainer = styled.div`
+  width: 50%;
+  align-self: center;
+`;
+
+const FlexContainer = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+`;
 
 
 
@@ -56,12 +75,14 @@ const Projects = ({projects}) => {
     return (
       <ProjectContainer id={element.id}>
         <ProjectTitle>{element.title}</ProjectTitle>
-        <div style={{
-          width: '50rem'
-        }}>
-          <ProjectImage />
-        </div>
-        <p>{element.desc}</p>
+        <FlexContainer>
+          <Description>
+            <p>{element.desc}</p>
+          </Description>
+          <ImageContainer>
+            <Image />
+          </ImageContainer>
+        </FlexContainer> 
       </ProjectContainer>
     )
   });
