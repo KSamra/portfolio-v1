@@ -20,7 +20,7 @@ const ProjectImage = () => {
     query {
       imageOne: file(relativePath: { eq: "Pokedex.png" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -56,7 +56,11 @@ const Projects = ({projects}) => {
     return (
       <ProjectContainer id={element.id}>
         <ProjectTitle>{element.title}</ProjectTitle>
-        <ProjectImage />
+        <div style={{
+          width: '50rem'
+        }}>
+          <ProjectImage />
+        </div>
         <p>{element.desc}</p>
       </ProjectContainer>
     )
