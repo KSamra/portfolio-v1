@@ -26,7 +26,7 @@ const MoreAbout = styled(About)`
 
 const WhoAmI = () => (
   <Section>
-    <Intro>Hello My Name Is</Intro>
+    <Intro>Hello, My Name Is</Intro>
     <HeroName>Kavan Samra</HeroName>
     <About>I'm a software developer</About>
     <MoreAbout>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

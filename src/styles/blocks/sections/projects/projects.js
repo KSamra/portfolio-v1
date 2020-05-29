@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import {Section, SectionTitle} from '../section';
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-image";
+import { breakpoints } from '../../../theme';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -20,7 +21,7 @@ const ProjectImage = () => {
     query {
       imageOne: file(relativePath: { eq: "Pokedex.png" }) {
         childImageSharp {
-          fluid(maxWidth: 30) {
+          fluid(maxWidth: 1080) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -50,19 +51,34 @@ const Image = styled(ProjectImage)`
  `;
 
 const Description = styled.div`
-  width: 50%;
-  margin-right: 1rem;
+  width: 100%;
+  line-height: 1.5;
+
+  @media ${breakpoints.lg} {
+    width: 50%;  
+    margin-left: 5rem;
+  }
 `;
 
 const ImageContainer = styled.div`
-  width: 50%;
+  width: 100%;
   align-self: center;
+
+  @media ${breakpoints.lg} {
+   width: 50%;
+   align-self: center; 
+  }
 `;
 
 const FlexContainer = styled.div`
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   width: 100%;
+
+  @media ${breakpoints.lg} {
+    flex-direction: row;
+  }
 `;
 
 
@@ -76,12 +92,12 @@ const Projects = ({projects}) => {
       <ProjectContainer id={element.id}>
         <ProjectTitle>{element.title}</ProjectTitle>
         <FlexContainer>
-          <Description>
-            <p>{element.desc}</p>
-          </Description>
           <ImageContainer>
             <Image />
           </ImageContainer>
+          <Description>
+            <p>{element.desc}</p>
+          </Description>
         </FlexContainer> 
       </ProjectContainer>
     )
