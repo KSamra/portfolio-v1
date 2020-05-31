@@ -103,13 +103,13 @@ const Projects = ({projects}) => {
     )
   });
   return (
-    <Section>
+    <Section id="projects">
       <SectionTitle>
         Projects
         <SectionTitle.Line/>
       </SectionTitle>
       <p>
-      Here are some things I've been working on recently.
+        Here are some things I've been working on recently.
       </p>
       <Section.Spacer />
 

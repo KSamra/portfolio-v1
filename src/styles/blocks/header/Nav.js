@@ -21,7 +21,7 @@ const Nav = () => (
   <NavWrapper>
     <NavList>
       <ListLink color='white' to="/#"> About</ListLink>
-      <ListLink color='white' to="/#">Projects</ListLink>
+      <ListLink color='white' to="/#projects">Projects</ListLink>
       <ListLink color='white' to="/#">Resume</ListLink>
       <ListLink color='white' to="/#">Contact</ListLink>
     </NavList>
