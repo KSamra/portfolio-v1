@@ -4,6 +4,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
 import { breakpoints } from '../../../theme';
+import GithubIcon from '../../../../icons/github';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -81,6 +82,13 @@ const FlexContainer = styled.div`
   }
 `;
 
+const IconLink = styled.a`
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+`;
+
 
 
 const Projects = ({projects}) => {
@@ -97,6 +105,12 @@ const Projects = ({projects}) => {
           </ImageContainer>
           <Description>
             <p>{element.desc}</p>
+            <IconLink 
+              href={element.github}
+              target="_blank"
+              rel="noreferrer noopener">
+              <GithubIcon />
+            </IconLink>
           </Description>
         </FlexContainer> 
       </ProjectContainer>
