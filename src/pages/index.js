@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Section from '../styles/blocks/sections/section';
 import WhoAmI from '../styles/blocks/sections/hero/whoami';
 import Projects from '../styles/blocks/sections/projects/projects';
 

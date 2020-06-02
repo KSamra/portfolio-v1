@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import React from 'react';
-import { ListLink } from '../../elements/Links'
 import { Link } from "gatsby";
 
 const Menu = ({isOpen}) => {
