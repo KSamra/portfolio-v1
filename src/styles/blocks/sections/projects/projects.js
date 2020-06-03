@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import {Section, SectionTitle} from '../section';
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
 import { breakpoints } from '../../../theme';
 import GithubIcon from '../../../../icons/github';
 import {ProjectImage} from './images';
@@ -17,22 +15,50 @@ import {ProjectImage} from './images';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-// const ProjectImage = ({image}) => {
-//   const data = useStaticQuery(graphql`
-//     query images($name: String){
-//       imageOne: file(relativePath: { eq: $name }) {
-//         childImageSharp {
-//           fluid(maxWidth: 1080) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   console.log(`Data: ${JSON.stringify(data, undefined, 2)}`)
 
-//   return <Img fluid={data.imageOne.childImageSharp.fluid} />
-// }
+const Projects = ({projects}) => {
+  
+  console.log(projects)
+
+  const projectList = projects.map(element => {
+    return (
+      <ProjectContainer key={element.id}>
+        <ProjectTitle>{element.title}</ProjectTitle>
+        <FlexContainer>
+          <ImageContainer>
+            {ProjectImage(element.image)}
+          </ImageContainer>
+          <Description>
+            <p>{element.desc}</p>
+            <IconLink 
+              href={element.github}
+              target="_blank"
+              rel="noreferrer noopener">
+              <GithubIcon />
+            </IconLink>
+          </Description>
+        </FlexContainer> 
+      </ProjectContainer>
+    )
+  });
+  return (
+    <Section id="projects">
+      <SectionTitle>
+        Projects
+        <SectionTitle.Line/>
+      </SectionTitle>
+      <p>
+        Here are some things I've been working on recently.
+      </p>
+      <Section.Spacer />
+
+      {projectList}
+    </Section>
+  )
+};
+
+export default Projects;
+
 
 
 const ProjectTitle = styled.h3`
@@ -87,45 +113,3 @@ const IconLink = styled.a`
 
 
 
-const Projects = ({projects}) => {
-  
-  console.log(projects)
-
-  const projectList = projects.map(element => {
-    return (
-      <ProjectContainer key={element.id}>
-        <ProjectTitle>{element.title}</ProjectTitle>
-        <FlexContainer>
-          <ImageContainer>
-            {ProjectImage(element.image)}
-          </ImageContainer>
-          <Description>
-            <p>{element.desc}</p>
-            <IconLink 
-              href={element.github}
-              target="_blank"
-              rel="noreferrer noopener">
-              <GithubIcon />
-            </IconLink>
-          </Description>
-        </FlexContainer> 
-      </ProjectContainer>
-    )
-  });
-  return (
-    <Section id="projects">
-      <SectionTitle>
-        Projects
-        <SectionTitle.Line/>
-      </SectionTitle>
-      <p>
-        Here are some things I've been working on recently.
-      </p>
-      <Section.Spacer />
-
-      {projectList}
-    </Section>
-  )
-};
-
-export default Projects;
