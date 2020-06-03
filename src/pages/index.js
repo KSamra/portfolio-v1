@@ -13,13 +13,16 @@ const projectData = [
     title: "Pokedex",
     desc: "This was the first solo project I made using React This was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using React",
     image: "Pokedex.png",
-    github: 'https://github.com/KSamra/pokedex'
+    github: 'https://github.com/KSamra/pokedex',
+    // tech: `React Node.js Express Apollo GraphQL MongoDB`,
+    tech: [`React`, `Node.js`, `Express`, `Apollo GraphQL`, `MongoDB`]
   },
   {
     id: 2,
     title: "Bloop",
     desc: "This was the first solo project I made using React",
-    image: "Pokedex.png"
+    image: "Pokedex.png",
+    tech: [`React`, `Node.js`, `Express`, `Apollo GraphQL`, `MongoDB`]
   }
 ]
 

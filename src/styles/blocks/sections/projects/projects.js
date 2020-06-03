@@ -21,6 +21,7 @@ const Projects = ({projects}) => {
   console.log(projects)
 
   const projectList = projects.map(element => {
+    console.log(element.tech)
     return (
       <ProjectContainer key={element.id}>
         <ProjectTitle>{element.title}</ProjectTitle>
@@ -30,6 +31,9 @@ const Projects = ({projects}) => {
           </ImageContainer>
           <Description>
             <p>{element.desc}</p>
+            <TechContainer>
+              <Tech tech={element.tech}/>
+            </TechContainer>
             <IconLink 
               href={element.github}
               target="_blank"
@@ -111,5 +115,19 @@ const IconLink = styled.a`
   }
 `;
 
+const TechContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
 
+const Tech = ({tech}) => {
+  let id = 0;
+
+  const techList = tech.map(e => (
+    <p key={id++}>{e}</p>
+  ))
+
+  return techList;
+}
 
