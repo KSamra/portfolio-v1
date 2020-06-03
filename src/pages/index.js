@@ -12,14 +12,14 @@ const projectData = [
     id: 0,
     title: "Pokedex",
     desc: "This was the first solo project I made using React This was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using ReactThis was the first solo project I made using React",
-    image: "none",
+    image: "Pokedex.png",
     github: 'https://github.com/KSamra/pokedex'
   },
   {
     id: 2,
     title: "Bloop",
     desc: "This was the first solo project I made using React",
-    image: "none"
+    image: "Pokedex.png"
   }
 ]
 

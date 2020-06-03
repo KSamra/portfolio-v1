@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import {Section, SectionTitle} from '../section';
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { breakpoints } from '../../../theme';
 import GithubIcon from '../../../../icons/github';
-
+import {ProjectImage} from './images';
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -17,22 +17,22 @@ import GithubIcon from '../../../../icons/github';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const ProjectImage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      imageOne: file(relativePath: { eq: "Pokedex.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1080) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  console.log(`Data: ${JSON.stringify(data, undefined, 2)}`)
+// const ProjectImage = ({image}) => {
+//   const data = useStaticQuery(graphql`
+//     query images($name: String){
+//       imageOne: file(relativePath: { eq: $name }) {
+//         childImageSharp {
+//           fluid(maxWidth: 1080) {
+//             ...GatsbyImageSharpFluid
+//           }
+//         }
+//       }
+//     }
+//   `)
+//   console.log(`Data: ${JSON.stringify(data, undefined, 2)}`)
 
-  return <Img fluid={data.imageOne.childImageSharp.fluid} />
-}
+//   return <Img fluid={data.imageOne.childImageSharp.fluid} />
+// }
 
 
 const ProjectTitle = styled.h3`
@@ -46,10 +46,6 @@ const ProjectContainer = styled.div`
   width: 100%;
 `;
 
-const Image = styled(ProjectImage)`
-  object-fit: cover;
-  width: 50%;
- `;
 
 const Description = styled.div`
   width: 100%;
@@ -97,11 +93,11 @@ const Projects = ({projects}) => {
 
   const projectList = projects.map(element => {
     return (
-      <ProjectContainer id={element.id}>
+      <ProjectContainer key={element.id}>
         <ProjectTitle>{element.title}</ProjectTitle>
         <FlexContainer>
           <ImageContainer>
-            <Image />
+            {ProjectImage(element.image)}
           </ImageContainer>
           <Description>
             <p>{element.desc}</p>
