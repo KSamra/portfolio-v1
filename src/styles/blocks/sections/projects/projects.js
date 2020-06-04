@@ -4,6 +4,7 @@ import React from 'react';
 import { breakpoints } from '../../../theme';
 import GithubIcon from '../../../../icons/github';
 import {ProjectImage} from './images';
+import {ButtonLink} from '../../../elements/Links';
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -57,15 +58,7 @@ const Projects = ({projects}) => {
       <Section.Spacer />
 
       {projectList}
-      <Link 
-        href="https://github.com/KSamra"
-        target="_blank"
-        rel="noreferrer noopener">
-
-         <div>
-          <h3>See More</h3> 
-         </div>
-      </Link>
+      <ButtonLink internal={false} to="https://github.com/KSamra" label={"See More"}/> 
       
     </Section>
   )
