@@ -34,12 +34,12 @@ const Projects = ({projects}) => {
             <TechContainer>
               <Tech tech={element.tech}/>
             </TechContainer>
-            <IconLink 
+            <Link 
               href={element.github}
               target="_blank"
               rel="noreferrer noopener">
               <GithubIcon />
-            </IconLink>
+            </Link>
           </Description>
         </FlexContainer> 
       </ProjectContainer>
@@ -57,6 +57,16 @@ const Projects = ({projects}) => {
       <Section.Spacer />
 
       {projectList}
+      <Link 
+        href="https://github.com/KSamra"
+        target="_blank"
+        rel="noreferrer noopener">
+
+         <div>
+          <h3>See More</h3> 
+         </div>
+      </Link>
+      
     </Section>
   )
 };
@@ -108,11 +118,27 @@ const FlexContainer = styled.div`
   }
 `;
 
-const IconLink = styled.a`
+const Link = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
   svg {
     width: 2rem;
     height: 2rem;
   }
+
+  h3 {
+    color: white;
+  }
+
+  div {
+    border: 1px solid green;
+    padding: .5rem;
+  }
+
+
 `;
 
 const TechContainer = styled.div`
