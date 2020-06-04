@@ -17,3 +17,7 @@ export const ListLink = ({to, children, color}) => (
     <SLink to={to} color={color}>{children}</SLink>
   </li>
 )
+
+export const ButtonLink = ({to}) => {
+  
+}

@@ -123,6 +123,7 @@ const Link = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  background: transparent;
   
   svg {
     width: 2rem;
@@ -134,8 +135,11 @@ const Link = styled.a`
   }
 
   div {
-    border: 1px solid green;
-    padding: .5rem;
+    border: 1px solid rgb(100, 255, 218);
+    background: transparent;
+    padding: .5rem .5rem;
+    width: fit-content;
+    border-radius: 10px;
   }
 
 
