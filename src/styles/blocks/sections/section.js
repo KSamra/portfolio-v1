@@ -9,6 +9,12 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
+  h2 {
+    /* font-size: 4rem; */
+    font-size: clamp(2rem, 2vw ,4rem );
+  }
   
 `;
 
@@ -16,7 +22,7 @@ export const SectionTitle = styled.h2`
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
-  font-size: 4rem;
+  /* font-size: 4rem; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
