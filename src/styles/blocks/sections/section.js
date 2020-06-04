@@ -13,8 +13,15 @@ export const Section = styled.section`
 
   h2 {
     /* font-size: 4rem; */
-    font-size: clamp(2rem, 2vw ,4rem );
+    font-size: clamp(3rem, 2vw ,4rem );
+    width: 100%;
   }
+
+  span {
+    width: min(25rem, 50%);
+  }
+
+
   
 `;
 
@@ -24,12 +31,12 @@ export const SectionTitle = styled.h2`
   margin-bottom: 1rem;
   /* font-size: 4rem; */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+
 `;
 
 const SectionLine = styled.span`
-  width: 30rem;
   background: #303C55;
   height: 1px;
   display: inline-block;
