@@ -13,11 +13,13 @@ const HeroName = styled.h1`
   color: white;
   margin: 1rem 0;
   font-size: 8rem;
+  align-self: flex-start;
 
 `;
 
 const About = styled.h3`
   color: goldenrod;
+  align-self: flex-start;
 `;
 
 const MoreAbout = styled(About)`

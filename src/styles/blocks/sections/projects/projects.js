@@ -113,7 +113,7 @@ const FlexContainer = styled.div`
 
 const Link = styled.a`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-decoration: none;
   background: transparent;

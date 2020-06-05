@@ -29,3 +29,8 @@ export const Center = styled.div`
     padding: 0 1.0875rem 1.45rem;
   }
 `;
+
+export const colors = {
+  button_primary: 'rgba(116, 70, 241, 1)',
+  button_light: 'rgba(116, 70, 241, .05)'
+};

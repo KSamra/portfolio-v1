@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import React from 'react';
-
+import {colors} from '../theme';
 // Any reusable styled Links will go here.
 
 export const SLink = styled(Link)`
@@ -45,14 +45,14 @@ const Button = styled.div`
   display: inline-block;
 
   background: transparent;
-  border: 1px solid rgba(116, 70, 241, 1);
+  border: 1px solid ${colors.button_primary};
   padding: 2rem;
-  color: rgba(116, 70, 241, 1);
+  color: ${colors.button_primary};
   cursor: pointer;
   border-radius: 10px;
 
   :hover {
-    background: rgba(116, 70, 241, .24)
+    background: ${colors.button_light};
   }
 
 `;
