@@ -69,7 +69,7 @@ export default Projects;
 
 
 const ProjectTitle = styled.h3`
-  color: goldenrod;
+  color: rgb(204, 214, 246);
   font-weight: 500;
 
 `;
@@ -121,6 +121,7 @@ const Link = styled.a`
   svg {
     width: 2rem;
     height: 2rem;
+    fill: rgb(204, 214, 246);
   }
 
   h3 {
@@ -142,6 +143,11 @@ const TechContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  p {
+    font-size: clamp(.8rem, 1.4vw, 1.2rem);
+    color: whitesmoke;
+  }
 `;
 
 const Tech = ({tech}) => {
