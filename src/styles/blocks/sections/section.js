@@ -13,12 +13,19 @@ export const Section = styled.section`
 
   h2 {
     /* font-size: 4rem; */
-    font-size: clamp(3rem, 2vw ,4rem );
+    /* Need to test to see if clamp works on Mobile Safari and Safari */
+    font-size: clamp(3.5rem, 2vw ,4rem );
     width: 100%;
   }
 
   span {
     width: min(25rem, 50%);
+  }
+
+  p {
+    /* replace with a better method */
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    line-height: 1.6;
   }
 
 

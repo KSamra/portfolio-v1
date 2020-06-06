@@ -14,6 +14,7 @@ const HeroName = styled.h1`
   margin: 1rem 0;
   font-size: 8rem;
   align-self: flex-start;
+  line-height: .9;
 
 `;
 
