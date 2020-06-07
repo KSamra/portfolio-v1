@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import React from 'react';
-import {colors} from '../theme';
+import {colors, breakpoints} from '../theme';
 // Any reusable styled Links will go here.
 
 export const SLink = styled(Link)`
@@ -42,17 +42,21 @@ export const ButtonLink = ({to, internal, label}) => {
 };
 
 const Button = styled.div`
-  display: inline-block;
 
   background: transparent;
   border: 1px solid ${colors.button_primary};
-  padding: 2rem;
+  padding: 1rem;
   color: ${colors.button_primary};
   cursor: pointer;
   border-radius: 10px;
+  margin-top: 3rem;
 
   :hover {
     background: ${colors.button_light};
+  }
+
+  @media ${breakpoints.md} {
+    padding: 2rem;
   }
 
 `;

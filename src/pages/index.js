@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import WhoAmI from '../styles/blocks/sections/hero/whoami';
 import Projects from '../styles/blocks/sections/projects/projects';
+import Contact from '../styles/blocks/sections/contact';
 
 const projectData = [
   {
@@ -31,6 +32,7 @@ const IndexPage = () => (
 
     <WhoAmI />
     <Projects projects={projectData} />
+    <Contact />
 
     <Link to="/page-2/">Go to page 2</Link>
 
