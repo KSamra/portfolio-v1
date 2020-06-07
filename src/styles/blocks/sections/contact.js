@@ -5,7 +5,7 @@ import {ButtonLink} from '../../elements/Links';
 
 const Contact = (props) => {
   return (
-    <Section>
+    <Section id="contact">
       <SectionTitle>
         Contact
         <SectionTitle.Line/>
@@ -15,7 +15,7 @@ const Contact = (props) => {
       <ButtonLink internal={false} to={"mailto:samrakavan@gmail.com"} label="Contact" ></ButtonLink>
     </Section>
     
-  )
+)
 };
 
 export default Contact;

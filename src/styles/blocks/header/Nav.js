@@ -23,7 +23,7 @@ const Nav = () => (
       <ListLink color='white' to="/#"> About</ListLink>
       <ListLink color='white' to="/#projects">Projects</ListLink>
       <ListLink color='white' to="/#">Resume</ListLink>
-      <ListLink color='white' to="/#">Contact</ListLink>
+      <ListLink color='white' to="/#contact">Contact</ListLink>
     </NavList>
     
   </NavWrapper>
