@@ -5,14 +5,18 @@ import {ButtonLink} from '../../elements/Links';
 
 const Contact = (props) => {
   return (
-    <Section id="contact">
+    <Section id="contact" child="last">
       <SectionTitle>
         Contact
         <SectionTitle.Line/>
       </SectionTitle>
-      <p>Let's get in touch!</p>
+      <h3>Let's get in touch!</h3>
+      <Message>
+        I am actively seeking a full time position and would love to hear from you about any opportunities.
+        I'm also open to relocation so if you're in another city don't hesitate to write! 
+      </Message>
       <Section.Spacer />
-      <ButtonLink internal={false} to={"mailto:samrakavan@gmail.com"} label="Contact" ></ButtonLink>
+      <ButtonLink internal={false} to={"mailto:samrakavan@gmail.com"} label="Contact" />
     </Section>
     
 )
@@ -21,3 +25,6 @@ const Contact = (props) => {
 export default Contact;
 
 
+const Message = styled.p`
+  max-width: 50%;
+`;

@@ -69,7 +69,8 @@ export default Projects;
 
 
 const ProjectTitle = styled.h3`
-  color: rgb(204, 214, 246);
+  /* color: rgb(204, 214, 246); */
+  color: palevioletred;
   font-weight: 500;
 
 `;

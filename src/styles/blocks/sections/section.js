@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
   margin: 5rem 0;
   width: 100%;
-  min-height: 70vh;
+  min-height: ${({child}) => child === 'last' ? '20vh' : '100vh'};
   display: flex;
   flex-direction: column;
   align-items: center;

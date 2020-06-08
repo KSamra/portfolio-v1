@@ -34,7 +34,9 @@ export const ButtonLink = ({to, internal, label}) => {
 
   return (
     <Button>
-      <a href={to} rel="noreferrer noopener nofollow">
+      <a href={to} rel="noreferrer noopener nofollow" style={{
+        color: `${colors.button_pink}`
+      }}>
         {label}
       </a>
     </Button>
@@ -45,12 +47,13 @@ export const ButtonLink = ({to, internal, label}) => {
 const Button = styled.div`
 
   background: transparent;
-  border: 1px solid ${colors.button_primary};
+  border: 1px solid ${colors.button_pink};
   padding: 1rem;
-  color: ${colors.button_primary};
+  color: ${colors.button_pink};
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 4px;
   margin-top: 3rem;
+  width: fit-content;
 
   :hover {
     background: ${colors.button_light};

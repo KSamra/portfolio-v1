@@ -32,5 +32,6 @@ export const Center = styled.div`
 
 export const colors = {
   button_primary: 'rgba(116, 70, 241, 1)',
-  button_light: 'rgba(116, 70, 241, .05)'
+  button_light: 'rgba(116, 70, 241, .05)',
+  button_pink: 'palevioletred'
 };
