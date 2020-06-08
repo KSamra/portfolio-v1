@@ -22,7 +22,8 @@ const projectData = [
     title: "Bloop",
     desc: "This was the first solo project I made using React",
     image: "Pokedex.png",
-    tech: [`React`, `Node.js`, `Express`, `Apollo GraphQL`, `MongoDB`]
+    tech: [`React`, `Node.js`, `Express`, `Apollo GraphQL`, `MongoDB`],
+    github: 'https://github.com/KSamra/pokedex'
   }
 ]
 
