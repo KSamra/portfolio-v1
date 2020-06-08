@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 const WhoAmI = () => (
   <Section>
     <div style={{
-      paddingTop: '15rem',
+      paddingTop: '15vh',
       boxSizing: 'border-box'
     }}>
       <Intro>Hello, my name is</Intro>
