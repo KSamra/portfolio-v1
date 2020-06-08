@@ -29,7 +29,11 @@ const About = styled.h3`
 `;
 
 
+const Wrapper = styled.div`
+  display: flex;
 
+  align-items: baseline;
+`;
 
 const WhoAmI = () => (
   <Section>
@@ -42,9 +46,12 @@ const WhoAmI = () => (
       <About>
         I'm a software developer looking for a Junior Developer position.
       </About>
+
       <LocationIcon />
+      <ButtonLink internal={false} to={"mailto:samrakavan@gmail.com"} label="Contact"/>
       
-      <ButtonLink internal={false} to={"mailto:samrakavan@gmail.com"} label="Contact" />
+
+      
     </div>
   </Section>
 )

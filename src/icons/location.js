@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {breakpoints } from '../styles/theme';
 
 const Icon = () => (
 
@@ -35,8 +36,14 @@ const StyledLocationIcon = styled.div`
   display: flex;
   align-items: center;
   svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    @media ${breakpoints.md} {
+      width: 2rem;
+      height: 2rem; 
+    }
+
     fill: rgb(204, 214, 246);
     margin-right: 1rem;
   }
@@ -46,7 +53,7 @@ const StyledLocationIcon = styled.div`
 const LocationIcon = () => (
   <StyledLocationIcon>
     <Icon />
-    <h3>Los Angeles, CA</h3> 
+    <p>Los Angeles, CA</p> 
   </StyledLocationIcon>
 )
 
