@@ -8,7 +8,7 @@ export const SLink = styled(Link)`
   color: ${props => props.color};
   transition: color 300ms ease;
   &:hover {
-    color: pink; 
+    color: ${colors.button_pink}; 
   }
 `;
 
@@ -52,7 +52,7 @@ const Button = styled.div`
   color: ${colors.button_pink};
   cursor: pointer;
   border-radius: 4px;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   width: fit-content;
 
   :hover {

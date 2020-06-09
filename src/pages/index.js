@@ -15,7 +15,8 @@ const projectData = [
     desc: "A dashboard providing information on all generations of Pokemon. Search for any Pokemon and learn about their base stats, strengths, weaknesses and more.",
     image: "Pokedex.png",
     github: 'https://github.com/KSamra/pokedex',
-    tech: [`React`, `Node.js`, `Express`, `Apollo GraphQL`, `MongoDB`]
+    tech: [`React`, `Node.js`, `Express`, `Apollo GraphQL`, `MongoDB`],
+    slug: 'pokedex'
   },
   {
     id: 2,
@@ -23,7 +24,8 @@ const projectData = [
     desc: "This was the first solo project I made using React",
     image: "Pokedex.png",
     tech: [`React`, `Node.js`, `Express`, `Apollo GraphQL`, `MongoDB`],
-    github: 'https://github.com/KSamra/pokedex'
+    github: 'https://github.com/KSamra/pokedex',
+    slug: 'pokedex'
   }
 ]
 

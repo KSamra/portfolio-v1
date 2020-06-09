@@ -5,6 +5,7 @@ import { breakpoints } from '../../../theme';
 import GithubIcon from '../../../../icons/github';
 import {ProjectImage} from './images';
 import {ButtonLink} from '../../../elements/Links';
+import { Link } from "gatsby";
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -25,7 +26,9 @@ const Projects = ({projects}) => {
     console.log(element.tech)
     return (
       <ProjectContainer key={element.id}>
-        <ProjectTitle>{element.title}</ProjectTitle>
+        <Link to={`/${element.slug}`}>
+          <ProjectTitle>{element.title}</ProjectTitle>
+        </Link>
         <FlexContainer>
           <ImageContainer>
             {ProjectImage(element.image)}
@@ -35,12 +38,9 @@ const Projects = ({projects}) => {
             <TechContainer>
               <Tech tech={element.tech}/>
             </TechContainer>
-            <Link 
-              href={element.github}
-              target="_blank"
-              rel="noreferrer noopener">
+            <GithubLink href={element.github}>
               <GithubIcon />
-            </Link>
+            </GithubLink>
           </Description>
         </FlexContainer> 
       </ProjectContainer>
@@ -58,6 +58,7 @@ const Projects = ({projects}) => {
       <Section.Spacer />
 
       {projectList}
+      <div style={{content: 'none', marginBottom: '5rem'}}></div>
       <ButtonLink internal={false} to="https://github.com/KSamra" label={"See More"}/> 
       
     </Section>
@@ -112,7 +113,7 @@ const FlexContainer = styled.div`
   }
 `;
 
-const Link = styled.a`
+const GithubLink = styled.a`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -123,6 +124,11 @@ const Link = styled.a`
     width: 2rem;
     height: 2rem;
     fill: rgb(204, 214, 246);
+    transition: fill-opacity 100ms ease-out;
+
+    :hover {
+      fill-opacity: .5;
+    }
   }
 
   h3 {
