@@ -6,7 +6,7 @@ const Icon = () => (
 
 
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
-    <path fill-rule="evenodd" clip-rule="evenodd" 
+    <path 
       d="M11.536 3.46401C12.0004 3.92832 12.3689 
         4.47957 12.6202 5.08629C12.8716 5.693 
         13.0009 6.34329 13.0009 7.00001C13.0009 7.65673 12.8716 8.30701 
