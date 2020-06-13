@@ -16,8 +16,16 @@ const project = data.projectsJson;
     <Layout>
       <Section>
         <Title>{project.title}</Title>
-        <p>{project.desc}</p>
-        <a>{project.github}</a>
+        <TextArea>
+
+          <Excerpt>{project.desc}</Excerpt>
+          <a>{project.github}</a>
+          <SubHeading> What I learned </SubHeading> 
+          <TextContent>Completing this project taught me how to
+            use React and setup a Apollo GraphQL Server. This is a cool project and I enjoyed
+            wokrin on it without any help from anyone else
+          </TextContent>
+        </TextArea>
       </Section>
     </Layout>
   );
@@ -28,6 +36,7 @@ const project = data.projectsJson;
 const Title = styled.h1`
   color: white;
   font-size: 3rem;
+  align-self: center;
 
   @media ${breakpoints.lg} {
     font-size: 4rem;
@@ -35,7 +44,31 @@ const Title = styled.h1`
 `;
 
 
+const Excerpt = styled.p`
+  max-width: 70%;
+`;
 
+const SubHeading = styled.h3`
+  align-self: flex-start;
+  color: white;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+`;
+
+const TextArea = styled.div`
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+`;
+
+const TextContent = styled.p`
+  align-self: flex-start;
+  margin: 0;
+
+`;
 
  export const query = graphql`
   query($slug: String!) {
