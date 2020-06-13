@@ -1,7 +1,8 @@
 ---
-title: "Sweet Pandas Eating Sweets"
+title: "Pokédex"
 date: "2017-08-10"
 slug: "pokedex"
+image: "Pokedex.png"
 ---
 
 Pandas are really sweet.

@@ -11,7 +11,7 @@ import Contact from '../styles/blocks/sections/contact';
 const projectData = [
   {
     id: 0,
-    title: "Pokedex",
+    title: "Pokédex",
     desc: "A dashboard providing information on all generations of Pokemon. Search for any Pokemon and learn about their base stats, strengths, weaknesses and more.",
     image: "Pokedex.png",
     github: 'https://github.com/KSamra/pokedex',
