@@ -7,12 +7,15 @@ import { graphql } from 'gatsby';
  */
 
  export default function Project({ data }) {
-  const post = data.markdownRemark;
-
+  console.log(data, null, 4);
+  const project = data.projectsJson;
+  
    return (
      <Layout>
-       <h1>{post.frontmatter.title}</h1>
-       <div>Hello world!</div>
+       <h1>{project.title}</h1>
+       <p>{project.desc}</p>
+       <a>{project.github}</a>
+
      </Layout>
    );
  };
@@ -20,10 +23,13 @@ import { graphql } from 'gatsby';
 
  export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
-      }
+    projectsJson(slug: { eq: $slug}) {
+      title
+      github
+      slug
+      image
+      desc
+      tech
     }
   }
 `
