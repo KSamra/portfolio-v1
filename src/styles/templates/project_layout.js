@@ -51,16 +51,24 @@ const Title = styled.h1`
 
 
 const Excerpt = styled.p`
-  max-width: 70%;
+  /* max-width: 100%;
   font-size: 1rem;
+
+  @media ${breakpoints.md} {
+    width: 70%;
+  } */
 
 `;
 
 const SubHeading = styled.h3`
   align-self: flex-start;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 2rem 0;
+
+  @media ${breakpoints.md}{
+    font-size: 2.5rem;
+  }
 `;
 
 const TextArea = styled.div`
@@ -73,6 +81,16 @@ const TextArea = styled.div`
   @media ${breakpoints.md} {
     width: 70%;
   }
+
+  p {
+    font-size: 1rem;
+
+    @media ${breakpoints.md} {
+      font-size: 1.6rem;
+    }
+
+  }
+
 
 `;
 
