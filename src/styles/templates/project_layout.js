@@ -4,6 +4,7 @@ import Layout from '../../components/layout';
 import { graphql } from 'gatsby';
 import { Section } from '../blocks/sections/section';
 import { breakpoints } from '../theme';
+import { ProjectImage } from '../blocks/sections/projects/images';
 /**
  * Layout for detailed project pages
  */
@@ -15,17 +16,22 @@ const project = data.projectsJson;
   return (
     <Layout>
       <Section>
-        <Title>{project.title}</Title>
-        <TextArea>
 
+        <Title>{project.title}</Title>
+
+        <ProjectImageContainer>
+          {ProjectImage(project.image)}
+        </ProjectImageContainer>
+
+        <TextArea>
           <Excerpt>{project.desc}</Excerpt>
-          <a>{project.github}</a>
           <SubHeading> What I learned </SubHeading> 
           <TextContent>Completing this project taught me how to
             use React and setup a Apollo GraphQL Server. This is a cool project and I enjoyed
             wokrin on it without any help from anyone else
           </TextContent>
         </TextArea>
+
       </Section>
     </Layout>
   );
@@ -46,6 +52,8 @@ const Title = styled.h1`
 
 const Excerpt = styled.p`
   max-width: 70%;
+  font-size: 1rem;
+
 `;
 
 const SubHeading = styled.h3`
@@ -56,11 +64,15 @@ const SubHeading = styled.h3`
 `;
 
 const TextArea = styled.div`
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media ${breakpoints.md} {
+    width: 70%;
+  }
 
 `;
 
@@ -68,6 +80,10 @@ const TextContent = styled.p`
   align-self: flex-start;
   margin: 0;
 
+`;
+
+const ProjectImageContainer = styled.div`
+  width: 100%;
 `;
 
  export const query = graphql`
