@@ -88,7 +88,7 @@ const TextArea = styled.div`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
@@ -110,11 +110,10 @@ const TextArea = styled.div`
 
 const List = styled.ul`
   align-self: flex-start;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   padding-inline-start: 0;
   margin: 0;
@@ -123,7 +122,6 @@ const List = styled.ul`
   
   li {
     font-size: 1rem;
-    margin: 0 1.5rem 0 0;
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
     }
@@ -141,7 +139,7 @@ const TextContent = styled.p`
 `;
 
 const ProjectImageContainer = styled.div`
-  width: 100%;
+  width: 90%;
 `;
 
  export const query = graphql`
