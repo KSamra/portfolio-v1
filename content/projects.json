@@ -5,7 +5,7 @@
     "desc": "A dashboard providing information on all generations of Pokémon. Search for any Pokémon and learn more about their stats, strengths, weaknesses and more.",
     "image": "Pokedex.png",
     "github": "https://github.com/KSamra/pokedex",
-    "tech": ["React", "Node.js", "Express", "Apollo GraphQL", "MongoDB"],
+    "tech": ["React", "Node.js", "Express", "Apollo-GraphQL", "MongoDB"],
     "slug": "pokedex"
   },
   {
@@ -14,7 +14,7 @@
     "desc": "placeholder project description",
     "image": "Pokedex.png",
     "github": "https://github.com/KSamra/pokedex",
-    "tech": ["React", "Node.js", "Express", "Apollo GraphQL", "MongoDB"],
+    "tech": ["React", "Node.js", "Express", "Apollo-GraphQL", "MongoDB"],
     "slug": "test"
   }
 ]

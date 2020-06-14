@@ -7,6 +7,7 @@ import { breakpoints } from '../theme';
 import { ProjectImage } from '../blocks/sections/projects/images';
 import { element } from 'prop-types';
 /**
+ * 
  * Layout for detailed project pages
  */
 
@@ -109,13 +110,26 @@ const TextArea = styled.div`
 
 const List = styled.ul`
   align-self: flex-start;
-
-
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style-position: inside;
+  box-sizing: border-box;
+  
   li {
     font-size: 1rem;
-
+    margin: 0 1.5rem 0 0;
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
+    }
+
+    &:last-child{ 
+      margin: 0;
     }
   }
 `;
