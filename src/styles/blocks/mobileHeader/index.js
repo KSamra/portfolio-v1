@@ -11,8 +11,8 @@ const MobileNav = () => {
 
   const handleClick = () => {
     setMenuOpen(isOpen => !isOpen);
-  }
-  console.log('Mobile nav open = ', menuOpen);
+  };
+
   return (
     <Header>
       <SLink to="/" color="white">Logo</SLink>

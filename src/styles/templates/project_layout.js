@@ -12,10 +12,10 @@ import { element } from 'prop-types';
  */
 
 export default function Project({ data }) {
-  console.log(data, null, 4);
+
   const project = data.projectsJson;
   const tech = Array.from(project.tech);
-  console.log(tech);
+
   let id = 0;  
   let techList = tech.map(element => {
     return <li key={id++}>{element}</li>

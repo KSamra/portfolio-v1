@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -29,7 +29,7 @@ const projectData = [
   }
 ]
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Kavan Samra" />
 
@@ -43,3 +43,17 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+
+export const query = graphql`
+query($slug: String!) {
+  projectsJson(slug: { eq: $slug}) {
+    title
+    github
+    slug
+    image
+    desc
+    tech
+  }
+}
+`
