@@ -5,13 +5,20 @@ import { graphql } from 'gatsby';
 import { Section } from '../blocks/sections/section';
 import { breakpoints } from '../theme';
 import { ProjectImage } from '../blocks/sections/projects/images';
+import { element } from 'prop-types';
 /**
  * Layout for detailed project pages
  */
 
 export default function Project({ data }) {
-console.log(data, null, 4);
-const project = data.projectsJson;
+  console.log(data, null, 4);
+  const project = data.projectsJson;
+  const tech = Array.from(project.tech);
+  console.log(tech);
+  let id = 0;  
+  let techList = tech.map(element => {
+    return <li key={id++}>{element}</li>
+  })
 
   return (
     <Layout>
@@ -25,11 +32,19 @@ const project = data.projectsJson;
 
         <TextArea>
           <Excerpt>{project.desc}</Excerpt>
-          <SubHeading> What I learned </SubHeading> 
+
+          <SubHeading> What I Learned </SubHeading> 
+
           <TextContent>Completing this project taught me how to
             use React and setup a Apollo GraphQL Server. This is a cool project and I enjoyed
-            wokrin on it without any help from anyone else
+            working on it without any help from anyone else
           </TextContent>
+
+          <SubHeading>Built With</SubHeading>
+          <List>
+            {techList}
+          </List>
+
         </TextArea>
 
       </Section>
@@ -50,25 +65,14 @@ const Title = styled.h1`
 `;
 
 
-const Excerpt = styled.p`
-  /* max-width: 100%;
-  font-size: 1rem;
 
-  @media ${breakpoints.md} {
-    width: 70%;
-  } */
+const Excerpt = styled.p`
 
 `;
 
 const SubHeading = styled.h3`
   align-self: flex-start;
   color: white;
-  font-size: 2rem;
-  margin: 2rem 0;
-
-  @media ${breakpoints.md}{
-    font-size: 2.5rem;
-  }
 `;
 
 const TextArea = styled.div`
@@ -78,20 +82,42 @@ const TextArea = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media ${breakpoints.md} {
+  @media ${breakpoints.sm} {
     width: 70%;
   }
 
   p {
     font-size: 1rem;
 
-    @media ${breakpoints.md} {
+    @media ${breakpoints.sm} {
       font-size: 1.6rem;
     }
 
   }
 
+  h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
 
+    @media ${breakpoints.sm}{
+      font-size: 2.5rem;
+    }
+  }
+
+
+`;
+
+const List = styled.ul`
+  align-self: flex-start;
+
+
+  li {
+    font-size: 1rem;
+
+    @media ${breakpoints.sm} {
+      font-size: 1.6rem;
+    }
+  }
 `;
 
 const TextContent = styled.p`
