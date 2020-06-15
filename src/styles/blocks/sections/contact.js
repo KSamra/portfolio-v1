@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import {Section, SectionTitle} from './section';
 import {ButtonLink} from '../../elements/Links';
+import { breakpoints } from '../../theme';
 
 const Contact = (props) => {
   return (
@@ -26,5 +27,10 @@ export default Contact;
 
 
 const Message = styled.p`
-  max-width: 50%;
+  width: 100%;
+
+  @media ${breakpoints.md}{
+    max-width: 60%;
+  }
+
 `;

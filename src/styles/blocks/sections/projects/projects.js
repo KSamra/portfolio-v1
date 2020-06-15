@@ -115,19 +115,25 @@ const FlexContainer = styled.div`
 
 export const GithubLink = styled.a`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   background: transparent;
   
   svg {
-    width: 2rem;
-    height: 2rem;
+    margin-top: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     fill: rgb(204, 214, 246);
     transition: fill-opacity 100ms ease-out;
 
     :hover {
       fill-opacity: .5;
+    }
+
+    @media ${breakpoints.sm} {
+      width: 2rem;
+      height: 2rem;
     }
   }
 

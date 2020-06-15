@@ -157,6 +157,10 @@ const ProjectImageContainer = styled.div`
   width: 90%;
 `;
 
+const Link = styled(GithubLink)`
+
+`;
+
  export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug}) {
