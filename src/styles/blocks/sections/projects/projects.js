@@ -20,27 +20,26 @@ import { Link } from "gatsby";
 
 const Projects = ({projects}) => {
   
-  console.log(projects)
-
+  console.log('In projects: ', projects);
   const projectList = projects.map(element => {
-    console.log(element.tech)
+    console.log('In Map: ', element.node.title)
     return (
-      <ProjectContainer key={element.id}>
-        <Link to={`/${element.slug}`}>
-          <ProjectTitle>{element.title}</ProjectTitle>
+      <ProjectContainer key={element.node.id}>
+        <Link to={`/${element.node.slug}`}>
+          <ProjectTitle>{element.node.title}</ProjectTitle>
         </Link>
         <FlexContainer>
           <ImageContainer>
-            {ProjectImage(element.image)}
+            {ProjectImage(element.node.image)}
           </ImageContainer>
           <Description>
-            <p>{element.desc}</p>
+            <p>{element.node.desc}</p>
             <TechContainer>
-              <Tech tech={element.tech}/>
+              <Tech tech={element.node.tech}/>
             </TechContainer>
-            <GithubLink href={element.github}>
+            <IconLink href={element.node.github}>
               <GithubIcon />
-            </GithubLink>
+            </IconLink>
           </Description>
         </FlexContainer> 
       </ProjectContainer>
@@ -113,7 +112,7 @@ const FlexContainer = styled.div`
   }
 `;
 
-export const GithubLink = styled.a`
+export const IconLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;

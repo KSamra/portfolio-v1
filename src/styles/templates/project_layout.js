@@ -6,7 +6,7 @@ import { Section } from '../blocks/sections/section';
 import { breakpoints } from '../theme';
 import { ProjectImage } from '../blocks/sections/projects/images';
 
-import { GithubLink } from '../blocks/sections/projects/projects';
+import { IconLink } from '../blocks/sections/projects/projects';
 import GithubIcon from '../../icons/github';
 
 import ExternalIcon from '../../icons/external';
@@ -40,12 +40,12 @@ export default function Project({ data }) {
           <Excerpt>{project.desc}</Excerpt>
 
           <div style={{display: 'flex', width: '10rem', justifyContent: 'space-evenly'}}>
-            <GithubLink href={project.github}>
+            <IconLink href={project.github}>
                 <GithubIcon />
-            </GithubLink>
-            <GithubLink href={project.github}>
+            </IconLink>
+            <IconLink href={project.github}>
               <ExternalIcon />
-            </GithubLink>
+            </IconLink>
           </div>
           <SubHeading>Built With</SubHeading>
           <List>
@@ -157,9 +157,6 @@ const ProjectImageContainer = styled.div`
   width: 90%;
 `;
 
-const Link = styled(GithubLink)`
-
-`;
 
  export const query = graphql`
   query($slug: String!) {
