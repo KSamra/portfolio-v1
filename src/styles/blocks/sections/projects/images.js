@@ -1,5 +1,4 @@
 import React from 'react';
-import Styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import styled from 'styled-components';
@@ -10,13 +9,13 @@ export const ProjectImage = (name) => {
       return (
         <StyledPokedexImage />
       ) 
-      break;
 
     case 'astro':
-      
+      break;
   
     default:
-      break;
+      console.error(`${name} is not an image found in the static image folder`);
+      return null;
   }
 }
 

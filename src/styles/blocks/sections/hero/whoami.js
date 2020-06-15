@@ -29,11 +29,7 @@ const About = styled.h3`
 `;
 
 
-const Wrapper = styled.div`
-  display: flex;
 
-  align-items: baseline;
-`;
 
 const WhoAmI = () => (
   <Section>
