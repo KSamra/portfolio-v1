@@ -5,7 +5,12 @@ import { graphql } from 'gatsby';
 import { Section } from '../blocks/sections/section';
 import { breakpoints } from '../theme';
 import { ProjectImage } from '../blocks/sections/projects/images';
-import { element } from 'prop-types';
+
+import { GithubLink } from '../blocks/sections/projects/projects';
+import GithubIcon from '../../icons/github';
+
+import ExternalIcon from '../../icons/external';
+
 /**
  * 
  * Layout for detailed project pages
@@ -34,6 +39,19 @@ export default function Project({ data }) {
         <TextArea>
           <Excerpt>{project.desc}</Excerpt>
 
+          <div style={{display: 'flex', width: '10rem', justifyContent: 'space-evenly'}}>
+            <GithubLink href={project.github}>
+                <GithubIcon />
+            </GithubLink>
+            <GithubLink href={project.github}>
+              <ExternalIcon />
+            </GithubLink>
+          </div>
+          <SubHeading>Built With</SubHeading>
+          <List>
+            {techList}
+          </List>
+
           <SubHeading> What I Learned </SubHeading> 
 
           <TextContent>Completing this project taught me how to
@@ -41,10 +59,7 @@ export default function Project({ data }) {
             working on it without any help from anyone else
           </TextContent>
 
-          <SubHeading>Built With</SubHeading>
-          <List>
-            {techList}
-          </List>
+          
 
         </TextArea>
 

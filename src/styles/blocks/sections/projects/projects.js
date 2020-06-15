@@ -113,7 +113,7 @@ const FlexContainer = styled.div`
   }
 `;
 
-const GithubLink = styled.a`
+export const GithubLink = styled.a`
   display: flex;
   justify-content: flex-start;
   align-items: center;
