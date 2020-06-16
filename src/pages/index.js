@@ -16,8 +16,6 @@ const IndexPage = ({data}) => {
       <Projects projects={data.allProjectsJson.edges} />
       <Contact />
 
-      <Link to="/page-2/">Go to page 2</Link>
-
     </Layout>
   )
 }

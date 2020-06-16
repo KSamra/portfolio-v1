@@ -5,6 +5,7 @@ import {GlobalStyle} from '../styles/globalStyle';
 
 // import Header from "./header"
 import Header from '../styles/blocks/header/index';
+import Footer from '../styles/blocks/footer';
 import MobileNav from '../styles/blocks/mobileHeader/index';
 import {Center} from '../styles/theme';
 
@@ -32,11 +33,9 @@ const Layout = ({ children }) => {
       <MobileNav />
       <Center>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
+        
+          {/* © {new Date().getFullYear()}, Built with */}
       </Center>
     </div>
   )
