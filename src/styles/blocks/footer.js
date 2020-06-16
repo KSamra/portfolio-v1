@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import React from 'react';
 import {breakpoints} from '../theme';
 
+import TwitterIcon from '../../icons/twitter';
+import GithubIcon from '../../icons/github';
+
 const Footer = () => (
   <StyledFooter>
     <SiteDesc>
@@ -9,6 +12,8 @@ const Footer = () => (
       <SourceLink href="https://github.com/KSamra/portfolio-v1">View Source</SourceLink>
 
     </SiteDesc>
+    <TwitterIcon/>
+    <GithubIcon/>
 
   </StyledFooter>
 
@@ -24,6 +29,19 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  svg {
+    margin-top: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: rgb(204, 214, 246);
+    transition: fill-opacity 100ms ease-out;
+    cursor: pointer;
+
+    :hover {
+      fill-opacity: .5;
+    }
+  }
 
 `;
 
@@ -42,17 +60,7 @@ const SiteDesc = styled.div`
     }
   }
 
-  svg {
-    margin-top: .5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    fill: rgb(204, 214, 246);
-    transition: fill-opacity 100ms ease-out;
-
-    :hover {
-      fill-opacity: .5;
-    }
-  }
+  
 `;
 
 const SourceLink = styled.a`
