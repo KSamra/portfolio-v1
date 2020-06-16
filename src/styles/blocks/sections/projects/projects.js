@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {Section, SectionTitle} from '../section';
 import React from 'react';
 import { breakpoints } from '../../../theme';
-import GithubIcon from '../../../../icons/github';
+import {IconGithub} from '../../../../icons/index';
 import {ProjectImage} from './images';
 import {ButtonLink} from '../../../elements/Links';
 import { Link } from "gatsby";
@@ -36,7 +36,7 @@ const Projects = ({projects}) => {
               <Tech tech={element.node.tech}/>
             </TechContainer>
             <IconLink href={element.node.github}>
-              <GithubIcon />
+              <IconGithub />
             </IconLink>
           </Description>
         </FlexContainer> 

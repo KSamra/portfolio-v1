@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import {breakpoints} from '../theme';
 
-import TwitterIcon from '../../icons/twitter';
-import GithubIcon from '../../icons/github';
+import {IconGithub, IconTwitter, IconLinkedIn} from '../../icons/index';
 
 const Footer = () => (
   <StyledFooter>
@@ -12,9 +11,12 @@ const Footer = () => (
       <SourceLink href="https://github.com/KSamra/portfolio-v1">View Source</SourceLink>
 
     </SiteDesc>
-    <TwitterIcon/>
-    <GithubIcon/>
-
+    <Flex>
+      <IconTwitter/>
+      <IconGithub />
+      <IconLinkedIn />
+    </Flex>
+    
   </StyledFooter>
 
 );
@@ -75,6 +77,14 @@ const SourceLink = styled.a`
   }
 `;
 
+const Flex = styled.div`
+  min-width: 10rem;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+`;
   
 
 

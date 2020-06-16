@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Section }from '../section';
 import {ButtonLink} from '../../../elements/Links';
-import LocationIcon from '../../../../icons/location';
+import {IconLocation} from '../../../../icons/index';
 import React from 'react';
 
 const Intro = styled.p`
@@ -44,7 +44,7 @@ const WhoAmI = () => (
         I'm a software developer looking for a Junior Developer position.
       </About>
 
-      <LocationIcon />
+      <IconLocation />
       <ButtonLink internal={false} to={"mailto:samrakavan@gmail.com"} label="Contact"/>
       
 
