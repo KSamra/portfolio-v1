@@ -24,7 +24,7 @@ export const Section = styled.section`
 
   p {
     /* replace with a better method */
-    font-size: clamp(1rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     line-height: 1.6;
   }
 

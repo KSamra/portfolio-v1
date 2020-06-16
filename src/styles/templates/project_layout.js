@@ -136,7 +136,7 @@ const List = styled.ul`
   box-sizing: border-box;
   
   li {
-    font-size: 1rem;
+    font-size: 1.2rem;
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
     }
