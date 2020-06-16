@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import { Section } from '../blocks/sections/section';
 import { breakpoints } from '../theme';
 import { ProjectImage } from '../blocks/sections/projects/images';
+import SEO from '../../components/seo';
 
 import { IconLink } from '../blocks/sections/projects/projects';
 import GithubIcon from '../../icons/github';
@@ -28,6 +29,7 @@ export default function Project({ data }) {
 
   return (
     <Layout>
+      <SEO title={project.title}/>
       <Section>
 
         <Title>{project.title}</Title>
