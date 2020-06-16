@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import React from 'react';
 
 const Hamburger = ({menuOpen, clickHandler}) => {
-  console.log("MenuOpen = ", menuOpen);
   return (
     <HamburgerButton onClick={clickHandler}>
       <Icon menuOpen={menuOpen}>

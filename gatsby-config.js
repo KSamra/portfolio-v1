@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Software Developer`,
-    description: `Software Developer from Los Angeles, CA`,
-    author: `@KSamra`,
+    title: `Kavan Samra | Software Developer`,
+    description: `Kavan Samra is a Software Developer located in Los Angeles, CA who is currently seeking a Junior Developer position.`,
+    author: `Kavan Samraj`,
   },
   plugins: [
     {
@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Kavan Samra | Software Developer Portfolio`,
+        short_name: `Kavan Samra`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -36,9 +36,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
-    'gatsby-plugin-styled-components'
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    'gatsby-plugin-styled-components',
+    `gatsby-plugin-offline`,
   ],
 }

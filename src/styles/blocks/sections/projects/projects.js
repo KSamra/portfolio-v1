@@ -20,9 +20,7 @@ import { Link } from "gatsby";
 
 const Projects = ({projects}) => {
   
-  console.log('In projects: ', projects);
   const projectList = projects.map(element => {
-    console.log('In Map: ', element.node.title)
     return (
       <ProjectContainer key={element.node.id}>
         <Link to={`/${element.node.slug}`}>

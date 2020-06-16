@@ -8,10 +8,9 @@ import Projects from '../styles/blocks/sections/projects/projects';
 import Contact from '../styles/blocks/sections/contact';
 
 const IndexPage = ({data}) => {
-  console.log('Page Query: ', data.allProjectsJson.edges);
   return (
     <Layout>
-      <SEO title="Kavan Samra" />
+      <SEO title="Kavan Samra | Software Developer" />
 
       <WhoAmI />
       <Projects projects={data.allProjectsJson.edges} />
