@@ -26,6 +26,7 @@ const About = styled.h3`
   /* color: goldenrod; */
   align-self: flex-start;
   width: max(60%, 30rem);
+  margin-bottom: 0;
 `;
 
 

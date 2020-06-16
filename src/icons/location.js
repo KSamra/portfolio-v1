@@ -45,6 +45,7 @@ const StyledLocationIcon = styled.div`
     }
 
     fill: rgb(204, 214, 246);
+    margin: auto 0;
     margin-right: 1rem;
   }
    
