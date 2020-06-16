@@ -34,7 +34,7 @@ const SiteDesc = styled.div`
   width: 100%;
   flex-direction: column;
 
-  p {
+  p,a {
     font-size: 1.2rem;
 
     @media ${breakpoints.md} {
