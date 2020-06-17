@@ -44,7 +44,7 @@ const Icon = styled.div`
   div {
     width: 2.5rem;
     height: .3rem;
-    background: ${({menuOpen}) => menuOpen ? 'red' : 'white'};
+    background: ${({menuOpen}) => menuOpen ? 'palevioletred' : 'white'};
     border-radius: 100px;
     transition: all 300ms;
 

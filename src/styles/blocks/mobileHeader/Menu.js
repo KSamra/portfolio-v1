@@ -52,6 +52,7 @@ const StyledList = styled.ul`
 const NavListItem = styled(Link)`
   font-size: 2rem;
   /* margin-bottom: 2rem; */
-  color: rgb(136, 146, 176);
+  /* color: rgb(136, 146, 176); */
+  color: white;
 
 `;
