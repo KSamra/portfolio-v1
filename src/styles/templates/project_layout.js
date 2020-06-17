@@ -29,7 +29,7 @@ export default function Project({ data }) {
 
   return (
     <Layout>
-      <SEO title={project.title}/>
+      <SEO title={`Kavan Samra | ${project.title}`}/>
       <Section>
 
         <Title>{project.title}</Title>

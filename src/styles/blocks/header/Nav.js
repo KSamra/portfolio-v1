@@ -30,10 +30,10 @@ const StyledAchor = styled.a`
 const Nav = () => (
   <NavWrapper>
     <NavList>
-      {/* <ListLink color='white' to="/#"> About</ListLink> */}
+      <ListLink color='white' to="/#about"> About</ListLink>
       <ListLink color='white' to="/#projects">Projects</ListLink>
       <ListLink color='white' to="/#contact">Contact</ListLink>
-      <StyledAchor href={Resume}>Resume</StyledAchor>
+      <StyledAchor href={Resume} aria-label="Resume">Resume</StyledAchor>
 
     </NavList>
     

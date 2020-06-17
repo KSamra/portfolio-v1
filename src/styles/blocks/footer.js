@@ -8,7 +8,9 @@ const Footer = () => (
   <StyledFooter>
     <SiteDesc>
       <p>Built by Kavan Samra</p>
-      <SourceLink href="https://github.com/KSamra/portfolio-v1">View Source</SourceLink>
+      <SourceLink href="https://github.com/KSamra/portfolio-v1" aria-label="View Source Code">
+        View Source
+      </SourceLink>
 
     </SiteDesc>
     <Flex>

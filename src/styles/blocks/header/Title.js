@@ -10,7 +10,7 @@ const Text = styled.h1`
 
 
 const Title = ({siteTitle}) => (
-  <SLink to="/">
+  <SLink to="/" aria-label="Home">
     <Text>
       {siteTitle}
     </Text>

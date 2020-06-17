@@ -2,17 +2,16 @@ import styled from 'styled-components';
 import React from 'react';
 import { Link } from "gatsby";
 import Resume from '../../../../content/test.pdf';
-import { SLink } from '../../elements/Links';
 import {colors } from '../../theme';
 
 const Menu = ({isOpen, clickHandler}) => {
   return (
     <MenuLinks isOpen={isOpen}>
       <StyledList>
-        <NavListItem onClick={clickHandler} to="/#about">About</NavListItem>
-        <NavListItem onClick={clickHandler} to="/#projects">Projects</NavListItem>
-        <NavListItem onClick={clickHandler} to="/#contact">Contact</NavListItem>
-        <OtherLink onClick={clickHandler} href={Resume}>Resume</OtherLink>
+        <NavListItem onClick={clickHandler} to="/#about" aria-label="About">About</NavListItem>
+        <NavListItem onClick={clickHandler} to="/#projects" aria-label="View Projects">Projects</NavListItem>
+        <NavListItem onClick={clickHandler} to="/#contact" aria-label="Contact Me">Contact</NavListItem>
+        <OtherLink onClick={clickHandler} href={Resume} aria-label="View Resume">Resume</OtherLink>
       </StyledList>
     </MenuLinks>
     

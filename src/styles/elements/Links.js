@@ -15,7 +15,7 @@ export const SLink = styled(Link)`
 
 export const ListLink = ({to, children, color}) => (
   <li style={{display: 'inline-block', marginRight: '1.5rem', fontSize: 'inherit'}}>
-    <SLink to={to} color={color}>{children} </SLink>
+    <SLink to={to} color={color} aria-label={children}>{children}</SLink>
     {/* <a href={to}>{children}</a> */}
   </li>
 )
