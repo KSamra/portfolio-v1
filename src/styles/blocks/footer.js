@@ -12,9 +12,17 @@ const Footer = () => (
 
     </SiteDesc>
     <Flex>
-      <IconTwitter/>
-      <IconGithub />
-      <IconLinkedIn />
+      <a href="https://twitter.com/kavansamra">
+        <IconTwitter/>
+      </a>
+      <a href={"https://github.com/KSamra"}>
+        <IconGithub />
+      </a>
+      <a href={"https://linkedin.com"}>
+        <IconLinkedIn />
+      </a>
+      
+      
     </Flex>
     
   </StyledFooter>
@@ -84,6 +92,10 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  a {
+    text-decoration: none;
+  }
 
 
 `;
