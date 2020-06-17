@@ -20,7 +20,7 @@ const Contact = (props) => {
       <ButtonLink internal={false} to={"mailto:samrakavan@gmail.com"} label="Contact" />
     </Section>
     
-)
+  )
 };
 
 export default Contact;
