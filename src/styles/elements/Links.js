@@ -7,6 +7,7 @@ import {colors, breakpoints} from '../theme';
 export const SLink = styled(Link)`
   color: ${props => props.color};
   transition: color 300ms ease;
+  cursor: pointer;
   &:hover {
     color: ${colors.button_pink}; 
   }
