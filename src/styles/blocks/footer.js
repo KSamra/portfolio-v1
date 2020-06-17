@@ -12,13 +12,13 @@ const Footer = () => (
 
     </SiteDesc>
     <Flex>
-      <a href="https://twitter.com/kavansamra">
+      <a href="https://twitter.com/kavansamra" aria-label="Twitter Profile">
         <IconTwitter/>
       </a>
-      <a href={"https://github.com/KSamra"}>
+      <a href={"https://github.com/KSamra"} aria-label="Github Profile">
         <IconGithub />
       </a>
-      <a href={"https://linkedin.com"}>
+      <a href={"https://linkedin.com"} aria-label="Linked In Profile">
         <IconLinkedIn />
       </a>
       

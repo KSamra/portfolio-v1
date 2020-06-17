@@ -15,7 +15,7 @@ export const SLink = styled(Link)`
 
 export const ListLink = ({to, children, color}) => (
   <li style={{display: 'inline-block', marginRight: '1.5rem', fontSize: 'inherit'}}>
-    <SLink to={to} color={color}>{children}</SLink>
+    <SLink to={to} color={color}>{children} </SLink>
     {/* <a href={to}>{children}</a> */}
   </li>
 )
@@ -25,8 +25,8 @@ export const ButtonLink = ({to, internal, label}) => {
 
   if (internal) {
     return (
-      <Button>
-        <Link to={to}>
+      <Button aria-label={label}>
+        <Link aria-label={label} to={to}>
           {label}
         </Link>
       </Button>
@@ -34,8 +34,8 @@ export const ButtonLink = ({to, internal, label}) => {
   } 
 
   return (
-    <Button>
-      <a href={to} rel="noreferrer noopener nofollow" style={{
+    <Button aria-label={label}>
+      <a href={to} rel="noreferrer noopener nofollow" aria-label={label} style={{
         color: `${colors.button_pink}`
       }}>
         {label}

@@ -7,7 +7,7 @@ export const ProjectImage = (name) => {
   switch (name) {
     case 'Pokedex.png':
       return (
-        <StyledPokedexImage />
+        <StyledPokedexImage alt="Pokedex project image"/>
       ) 
 
     case 'astro':
@@ -34,7 +34,7 @@ const PokedexImage = () => {
     }
   `)
   
-  return <Img fluid={data.imageOne.childImageSharp.fluid} />
+  return <Img fluid={data.imageOne.childImageSharp.fluid} alt="Project Image" />
 }
 
 const StyledPokedexImage = styled(PokedexImage)`
