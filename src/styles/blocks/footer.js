@@ -67,9 +67,10 @@ const SiteDesc = styled.div`
 
 const SourceLink = styled.a`
   text-decoration: none;
-  transition: color 100ms linear;
+  transition: border-bottom 100ms linear;
   cursor: pointer;
   color: palevioletred;
+  box-sizing: border-box;
   
 
   :hover {
@@ -83,6 +84,7 @@ const Flex = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 
 `;
   

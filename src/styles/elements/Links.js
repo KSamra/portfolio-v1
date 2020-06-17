@@ -55,6 +55,7 @@ const Button = styled.div`
   border-radius: 4px;
   /* margin-top: 3rem; */
   width: fit-content;
+  transition: all 100ms ease;
 
   :hover {
     background: ${colors.button_light};
