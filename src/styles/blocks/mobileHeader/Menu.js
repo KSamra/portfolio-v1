@@ -37,13 +37,12 @@ const MenuLinks = styled.nav`
   transform: ${({isOpen}) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
 `;
 
-const StyledList = styled.ul`
+const StyledList = styled.div`
   display: flex;
   height: 50%;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  list-style: none;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;

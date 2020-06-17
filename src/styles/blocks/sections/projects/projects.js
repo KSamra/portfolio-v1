@@ -35,7 +35,7 @@ const Projects = ({projects}) => {
             <TechContainer>
               <Tech tech={element.node.tech}/>
             </TechContainer>
-            <IconLink href={element.node.github}>
+            <IconLink href={element.node.github} aria-label="View Source Code for this project on Github" title="View Source">
               <IconGithub />
             </IconLink>
           </Description>

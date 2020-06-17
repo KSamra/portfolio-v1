@@ -42,10 +42,10 @@ export default function Project({ data }) {
           <Excerpt>{project.desc}</Excerpt>
 
           <div style={{display: 'flex', width: '10rem', justifyContent: 'space-evenly'}}>
-            <IconLink href={project.github}>
+            <IconLink href={project.github} aria-label="View Source Code on Github" title="Github Source">
                 <GithubIcon />
             </IconLink>
-            <IconLink href={project.github}>
+            <IconLink href={project.github} aria-label="View Live" title="View Live">
               <ExternalIcon />
             </IconLink>
           </div>

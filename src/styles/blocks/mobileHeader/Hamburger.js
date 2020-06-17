@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hamburger = ({menuOpen, clickHandler}) => {
   return (
-    <HamburgerButton onClick={clickHandler}>
+    <HamburgerButton onClick={clickHandler} aria-label="Toggle Navigation Menu">
       <Icon menuOpen={menuOpen}>
         <div></div>
         <div></div>

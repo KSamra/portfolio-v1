@@ -33,7 +33,10 @@ const Nav = () => (
       <ListLink color='white' to="/#about"> About</ListLink>
       <ListLink color='white' to="/#projects">Projects</ListLink>
       <ListLink color='white' to="/#contact">Contact</ListLink>
-      <StyledAchor href={Resume} aria-label="Resume">Resume</StyledAchor>
+      <li style={{display: 'inline-block', fontSize: 'inherit'}}>
+        <StyledAchor href={Resume} aria-label="Resume">Resume</StyledAchor>
+      </li>
+      
 
     </NavList>
     
