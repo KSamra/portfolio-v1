@@ -3,9 +3,10 @@ import { Section }from '../section';
 import {ButtonLink} from '../../../elements/Links';
 import {IconLocation} from '../../../../icons/index';
 import React from 'react';
+import {colors} from '../../../theme';
 
 const Intro = styled.p`
-  color: palevioletred;
+  color: ${colors.primary};
   align-self: flex-start;
   line-height: 1;
   margin-bottom: 0;

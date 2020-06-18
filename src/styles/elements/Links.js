@@ -9,7 +9,7 @@ export const SLink = styled(Link)`
   transition: color 300ms ease;
   cursor: pointer;
   &:hover {
-    color: ${colors.button_pink}; 
+    color: ${colors.primary}; 
   }
 `;
 
@@ -36,7 +36,7 @@ export const ButtonLink = ({to, internal, label}) => {
   return (
     <Button aria-label={label}>
       <a href={to} rel="noreferrer noopener nofollow" aria-label={label} style={{
-        color: `${colors.button_pink}`
+        color: `${colors.primary}`
       }}>
         {label}
       </a>
@@ -48,9 +48,9 @@ export const ButtonLink = ({to, internal, label}) => {
 const Button = styled.div`
 
   background: transparent;
-  border: 1px solid ${colors.button_pink};
+  border: 1px solid ${colors.primary};
   padding: 1rem;
-  color: ${colors.button_pink};
+  color: ${colors.primary};
   cursor: pointer;
   border-radius: 4px;
   /* margin-top: 3rem; */

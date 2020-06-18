@@ -1,13 +1,20 @@
 import styled from 'styled-components';
 import React from 'react';
-import {breakpoints} from '../theme';
+import {colors, breakpoints} from '../theme';
 
 import {IconGithub, IconTwitter, IconLinkedIn} from '../../icons/index';
 
 const Footer = () => (
   <StyledFooter>
     <SiteDesc>
-      <p>Built by Kavan Samra</p>
+      <p>Built by Kavan Samra. 
+        Icon made by&nbsp;
+        <SourceLink href="https://www.flaticon.com/authors/freepik" aria-label="Icon Designer">
+          Freepik
+        </SourceLink>
+        &nbsp;from&nbsp;
+        <SourceLink href="https://www.flaticon.com/" aria-label="Icon Source">Flaticon</SourceLink>
+      </p>
       <SourceLink href="https://github.com/KSamra/portfolio-v1" aria-label="View Source Code">
         View Source
       </SourceLink>
@@ -79,12 +86,12 @@ const SourceLink = styled.a`
   text-decoration: none;
   transition: border-bottom 100ms linear;
   cursor: pointer;
-  color: palevioletred;
+  color: ${colors.primary};
   box-sizing: border-box;
   
 
   :hover {
-    border-bottom: 1px solid palevioletred;
+    border-bottom: 1px solid ${colors.primary};
   }
 `;
 

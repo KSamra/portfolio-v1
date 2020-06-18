@@ -30,9 +30,14 @@ export const Center = styled.div`
   }
 `;
 
+// blue: #00ECFF
+
 export const colors = {
   button_primary: 'rgba(116, 70, 241, 1)',
   // button_light: 'rgba(116, 70, 241, .05)',
   button_light: 'rgb(219, 112, 147, .5)',
-  button_pink: 'rgba(219, 112, 147, 1)'
+  // button_pink: 'rgba(219, 112, 147, 1)'
+  button_pink: '#00ECFF',
+  primary: '#00ECFF'
 };
+

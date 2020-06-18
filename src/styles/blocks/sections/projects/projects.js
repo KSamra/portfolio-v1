@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Section, SectionTitle} from '../section';
 import React from 'react';
-import { breakpoints } from '../../../theme';
+import { colors,breakpoints } from '../../../theme';
 import {IconGithub} from '../../../../icons/index';
 import {ProjectImage} from './images';
 import {ButtonLink} from '../../../elements/Links';
@@ -68,7 +68,7 @@ export default Projects;
 
 const ProjectTitle = styled.h3`
   /* color: rgb(204, 214, 246); */
-  color: palevioletred;
+  color: ${colors.primary};
   font-weight: 500;
 
 `;
