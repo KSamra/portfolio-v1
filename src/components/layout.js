@@ -27,7 +27,8 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <Header>
-        <Header.Title siteTitle={data.site.siteMetadata.title}/>
+        {/* <Header.Title siteTitle={data.site.siteMetadata.title}/> */}
+        <Header.Logo />
         <Header.Nav />
       </Header>
       <MobileNav />
