@@ -38,6 +38,6 @@ export const colors = {
   button_light: 'rgb(219, 112, 147, .5)',
   // button_pink: 'rgba(219, 112, 147, 1)'
   button_pink: '#00ECFF',
-  primary: '#00ECFF'
+  primary: 'rgb(255, 167, 196)'
 };
 

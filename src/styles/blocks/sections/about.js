@@ -55,6 +55,7 @@ const List = styled.ul`
   height: 10rem;
   width: 30rem;
   box-sizing: border-box;
+  list-style-position: inside;
   /* color: white; */
   li {
     margin: 0.5rem 1rem 0 0;
