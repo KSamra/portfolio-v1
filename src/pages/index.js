@@ -38,6 +38,7 @@ query {
         tech
         desc
         slug
+        link
       }
     }
   }

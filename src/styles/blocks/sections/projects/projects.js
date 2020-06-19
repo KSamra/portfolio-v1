@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {Section, SectionTitle} from '../section';
 import React from 'react';
 import { colors,breakpoints } from '../../../theme';
-import {IconGithub} from '../../../../icons/index';
+import {IconGithub, IconExternal} from '../../../../icons/index';
 import {ProjectImage} from './images';
 import {ButtonLink} from '../../../elements/Links';
 import { Link } from "gatsby";
@@ -37,9 +37,17 @@ const Projects = ({projects}) => {
             <TechContainer>
               <Tech tech={element.node.tech}/>
             </TechContainer>
-            <IconLink href={element.node.github} aria-label="View Source Code for this project on Github" title="View Source">
-              <IconGithub />
-            </IconLink>
+
+            <div style={{display: 'flex', justifyContent: 'center'}}> 
+              <IconLink href={element.node.github} aria-label="View Source Code for this project on Github" title="View Source">
+                <IconGithub />
+              </IconLink>
+              {
+                element.node.link ? <IconLink href={element.node.link} aria-label="View Live" title="View Live">
+                                  <IconExternal />
+                                </IconLink> : null
+              }
+              </div>
           </Description>
         </FlexContainer> 
       </ProjectContainer>
@@ -126,7 +134,7 @@ export const IconLink = styled.a`
   background: transparent;
   
   svg {
-    margin-top: .5rem;
+    margin: .5rem 2rem;
     width: 1.5rem;
     height: 1.5rem;
     fill: rgb(204, 214, 246);

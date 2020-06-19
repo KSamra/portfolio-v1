@@ -8,9 +8,8 @@ import { ProjectImage } from '../blocks/sections/projects/images';
 import SEO from '../../components/seo';
 
 import { IconLink } from '../blocks/sections/projects/projects';
-import GithubIcon from '../../icons/github';
 
-import ExternalIcon from '../../icons/external';
+import {IconExternal, IconGithub} from '../../icons/index';
 
 /**
  * 
@@ -43,11 +42,11 @@ export default function Project({ data }) {
 
           <div style={{display: 'flex', width: '10rem', justifyContent: 'space-evenly'}}>
             <IconLink href={project.github} aria-label="View Source Code on Github" title="Github Source">
-                <GithubIcon />
+                <IconGithub />
             </IconLink>
             {
               project.link ? <IconLink href={project.github} aria-label="View Live" title="View Live">
-                                <ExternalIcon />
+                                <IconExternal />
                               </IconLink> : null
             }
             

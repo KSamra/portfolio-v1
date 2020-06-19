@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import {Section, SectionTitle} from './section';
 import {ButtonLink} from '../../elements/Links';
-import { breakpoints } from '../../theme';
+import { colors, breakpoints } from '../../theme';
 
 const Contact = (props) => {
   return (
@@ -11,7 +11,7 @@ const Contact = (props) => {
         Contact
         <SectionTitle.Line/>
       </SectionTitle>
-      <h3>Let's get in touch!</h3>
+      <h3 style={{color: `${colors.subtext}`}}>Let's get in touch!</h3>
       <Message>
         I am actively seeking a full time position and would love to hear from you about any opportunities.
         I'm also open to relocation so if you're in another city don't hesitate to write! 
