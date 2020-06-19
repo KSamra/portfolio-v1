@@ -15,7 +15,7 @@ const StyledLogo = styled.div`
 
 const Logo = () => (
   <StyledLogo>
-    <Link to="/">
+    <Link to="/" aria-label="Logo link home">
       <IconKeyboard />
     </Link>
   </StyledLogo>

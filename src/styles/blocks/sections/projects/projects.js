@@ -23,12 +23,14 @@ const Projects = ({projects}) => {
   const projectList = projects.map(element => {
     return (
       <ProjectContainer key={element.node.id}>
-        <Link to={`/${element.node.slug}`}>
+        <Link to={`/${element.node.slug}`} aria-label="Go to Project Page">
           <ProjectTitle>{element.node.title}</ProjectTitle>
         </Link>
         <FlexContainer>
           <ImageContainer>
-            {ProjectImage(element.node.image)}
+            <Link to={`/${element.node.slug}`} aria-label="Go to Project Page">  
+              {ProjectImage(element.node.image)}
+            </Link>
           </ImageContainer>
           <Description>
             <p>{element.node.desc}</p>
@@ -68,8 +70,13 @@ export default Projects;
 
 const ProjectTitle = styled.h3`
   /* color: rgb(204, 214, 246); */
-  color: ${colors.primary};
+  color: white;
   font-weight: 500;
+  transition: color 100ms ease;
+
+  :hover {
+    color: ${colors.primary};
+  }
 
 `;
 

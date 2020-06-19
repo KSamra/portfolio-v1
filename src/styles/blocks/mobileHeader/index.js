@@ -17,7 +17,7 @@ const MobileNav = () => {
   return (
     <Header>
       <Logo>
-        <Link to="/">
+        <Link to="/" aria-label="Logo link to Home">
           <IconKeyboard />
         </Link>
       </Logo>

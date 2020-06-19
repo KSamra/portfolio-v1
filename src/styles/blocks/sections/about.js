@@ -12,30 +12,36 @@ const About = () => {
         <SectionTitle.Line/>
       </SectionTitle>
       <Description>
-        I am mostly a web programmer and have experience with 
-        the following languages.I am mostly a web programmer and have experience with 
-        the following languagesI am mostly a web programmer and have experience with 
-        the following languages
+       I recently graduated from the University of California, Santa Cruz with a B.S in Computer Science.
+       Most of my experience relates to the web and the M.E.R.N stack but I'm eager to learn any tech stack that is required.
       </Description>
-      <SubHeading>Languages</SubHeading>
-      <List>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C/C++</li>
-        <li>HTML</li>
-        <li>CSS/Sass</li>
-      </List>
-      <SubHeading>Technologies &amp; Frameworks </SubHeading>
-      <List>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>GraphQL</li>
-        <li>MongoDB</li>
-        <li>AWS</li>
-        <li>Firebase</li>
-        
-      </List>
+      <ListArea>
+        <ColumnFlex>
+        <SubHeading>Languages</SubHeading>
+        <List>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>C/C++</li>
+          <li>HTML</li>
+          <li>CSS/Sass</li>
+        </List>
+        </ColumnFlex>
+
+        <ColumnFlex>
+        <SubHeading>Technologies</SubHeading>
+        <List>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>GraphQL</li>
+          <li>MongoDB</li>
+          <li>AWS</li>
+          <li>Firebase</li>
+          
+        </List>
+        </ColumnFlex>
+      </ListArea>
+      
     </Section>
   )
 };
@@ -71,4 +77,20 @@ const Description = styled.p`
 
 const SubHeading = styled.h3`
   color: white;
+`;
+
+const ListArea = styled.div`
+   
+  @media ${breakpoints.md} {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+`;
+
+const ColumnFlex = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
