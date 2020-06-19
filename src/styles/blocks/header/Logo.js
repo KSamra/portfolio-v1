@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IconKeyboard} from '../../../icons/index';
+import { IconLogo} from '../../../icons/index';
 import {Link} from 'gatsby';
 
 const StyledLogo = styled.div`
@@ -16,7 +16,7 @@ const StyledLogo = styled.div`
 const Logo = () => (
   <StyledLogo>
     <Link to="/" aria-label="Logo link home">
-      <IconKeyboard />
+      <IconLogo />
     </Link>
   </StyledLogo>
 );

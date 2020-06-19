@@ -5,7 +5,7 @@ import { breakpoints } from '../../theme';
 import Hamburger from './Hamburger';
 import Menu from './Menu';
 import Backdrop from './Backdrop';
-import {IconKeyboard} from '../../../icons/index';
+import {IconLogo} from '../../../icons/index';
 
 const MobileNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const MobileNav = () => {
     <Header>
       <Logo>
         <Link to="/" aria-label="Logo link to Home">
-          <IconKeyboard />
+          <IconLogo />
         </Link>
       </Logo>
       

@@ -3,7 +3,7 @@ import {colors} from '../styles/theme';
 
 
 
-const IconKeyboard = () => (
+const IconLogo = () => (
 
   <svg viewBox="0 0 532 532" version="1.1" xmlns="http://www.w3.org/2000/svg"  
     style={{fillRule:"evenodd",
@@ -25,4 +25,4 @@ const IconKeyboard = () => (
 
 );
 
-export default IconKeyboard;
+export default IconLogo;
