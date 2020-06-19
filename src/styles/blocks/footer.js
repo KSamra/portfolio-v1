@@ -7,14 +7,7 @@ import {IconGithub, IconTwitter, IconLinkedIn} from '../../icons/index';
 const Footer = () => (
   <StyledFooter>
     <SiteDesc>
-      <p>Built by Kavan Samra. 
-        Icon made by&nbsp;
-        <SourceLink href="https://www.flaticon.com/authors/freepik" aria-label="Icon Designer">
-          Freepik
-        </SourceLink>
-        &nbsp;from&nbsp;
-        <SourceLink href="https://www.flaticon.com/" aria-label="Icon Source">Flaticon</SourceLink>
-      </p>
+      <p>Built by Kavan Samra</p>
       <SourceLink href="https://github.com/KSamra/portfolio-v1" aria-label="View Source Code">
         View Source
       </SourceLink>

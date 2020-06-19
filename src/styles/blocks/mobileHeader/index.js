@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import {SLink} from '../../elements/Links';
+import {Link } from 'gatsby';
 import { breakpoints } from '../../theme';
 import Hamburger from './Hamburger';
 import Menu from './Menu';
 import Backdrop from './Backdrop';
+import {IconKeyboard} from '../../../icons/index';
 
 const MobileNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,12 @@ const MobileNav = () => {
 
   return (
     <Header>
-      <SLink to="/" color="white">Logo</SLink>
+      <Logo>
+        <Link to="/">
+          <IconKeyboard />
+        </Link>
+      </Logo>
+      
       <Hamburger menuOpen={menuOpen} clickHandler={handleClick}/>
 
       {/* Try with a conditional render but this may not be smooth enough.
@@ -34,15 +40,23 @@ const Header = styled.header`
   @media ${breakpoints.lg} {
     display: none;
   }
-  padding: 0 1rem;
-  height: 3rem;
+  padding: 0 2rem;
+  height: 8rem;
   /* position: fixed */
   width: 100%;
   /* background: pink; */
-  border-bottom: blue;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const Logo = styled.div`
+    margin-top: 1rem;
+
+  svg {
+    height: 5rem;
+    width: 5rem;
+  }
 `;
 

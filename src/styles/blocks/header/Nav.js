@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ListLink } from '../../elements/Links';
 import React from 'react';
 import Resume from '../../../../content/test.pdf';
+import {colors} from '../../theme';
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -21,7 +22,7 @@ const StyledAchor = styled.a`
   transition: color 300ms ease;
   
   :hover {
-    color: palevioletred;
+    color: ${colors.primary};
   }
 `;
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
+import {colors} from '../../theme';
 
 const Hamburger = ({menuOpen, clickHandler}) => {
   return (
@@ -44,7 +45,7 @@ const Icon = styled.div`
   div {
     width: 2.5rem;
     height: .3rem;
-    background: ${({menuOpen}) => menuOpen ? 'palevioletred' : 'white'};
+    background: ${({menuOpen}) => menuOpen ? `${colors.primary}` : 'white'};
     border-radius: 100px;
     transition: all 300ms;
 

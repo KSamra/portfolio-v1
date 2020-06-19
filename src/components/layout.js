@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import {GlobalStyle} from '../styles/globalStyle';
 
 // import Header from "./header"
@@ -12,22 +11,12 @@ import {Center} from '../styles/theme';
 // import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  
 
   return (
     <div>
       <GlobalStyle />
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <Header>
-        {/* <Header.Title siteTitle={data.site.siteMetadata.title}/> */}
         <Header.Logo />
         <Header.Nav />
       </Header>
