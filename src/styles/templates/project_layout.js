@@ -45,9 +45,12 @@ export default function Project({ data }) {
             <IconLink href={project.github} aria-label="View Source Code on Github" title="Github Source">
                 <GithubIcon />
             </IconLink>
-            <IconLink href={project.github} aria-label="View Live" title="View Live">
-              <ExternalIcon />
-            </IconLink>
+            {
+              project.link ? <IconLink href={project.github} aria-label="View Live" title="View Live">
+                                <ExternalIcon />
+                              </IconLink> : null
+            }
+            
           </div>
           <SubHeading>Built With</SubHeading>
           <List>
@@ -169,6 +172,7 @@ const ProjectImageContainer = styled.div`
       image
       desc
       tech
+      link
     }
   }
 `

@@ -58,7 +58,7 @@ const NavListItem = styled(Link)`
   z-index: 10;
   transition: color 100ms linear; 
   :hover{
-    color: ${colors.button_pink}
+    color: ${colors.primary}
   }
 
 
@@ -72,6 +72,6 @@ const OtherLink = styled.a`
 
   transition: color 100ms linear; 
   :hover{
-    color: ${colors.button_pink}
+    color: ${colors.primary}
   }
 `;

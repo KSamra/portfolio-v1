@@ -5,6 +5,7 @@
     "desc": "A dashboard providing information on all generations of Pokémon. Search for any Pokémon and learn more about their stats, strengths, weaknesses and more.",
     "image": "Pokedex.png",
     "github": "https://github.com/KSamra/pokedex",
+    "link": "",
     "tech": ["React.js", "Node.js", "Apollo-GraphQL", "MongoDB"],
     "slug": "pokedex"
   },
@@ -13,7 +14,8 @@
     "title": "Share Yourself Artists",
     "desc": "An art sharing platform where users can upload their artwork to share with others. Users can optionally purchase credits to have their artwork sponsored or simply use the free-tier.",
     "image": "SYA.png",
-    "github": "https://github.com/KSamra/pokedex",
+    "github": "https://github.com/KSamra/sya-react-aws",
+    "link": "",
     "tech": ["React.js", "Node.js", "AWS Lambda", "AWS Cognito", "DynamoDB"],
     "slug": "share-yourself-artists"
   },
@@ -22,7 +24,8 @@
     "title": "Startup Analysis",
     "desc": "Data Analysis project attempting to answer questions about startup investments.",
     "image": "startup_analysis.png",
-    "github": "https://github.com/KSamra/pokedex",
+    "github": "https://github.com/KSamra/Successful-Startups",
+    "link": "https://startup-analysis-681e1.web.app/",
     "tech": ["Python", "Pandas", "Bokeh", "HTML"],
     "slug": "startup-analysis"
   }
