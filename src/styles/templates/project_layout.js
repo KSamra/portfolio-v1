@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import { graphql } from 'gatsby';
 import { Section } from '../blocks/sections/section';
-import { breakpoints } from '../theme';
+import { colors, breakpoints } from '../theme';
 import { ProjectImage } from '../blocks/sections/projects/images';
 import SEO from '../../components/seo';
 
@@ -90,7 +90,7 @@ const Excerpt = styled.p`
 
 const SubHeading = styled.h3`
   align-self: flex-start;
-  color: white;
+  color: ${colors.subtext};
 `;
 
 const TextArea = styled.div`

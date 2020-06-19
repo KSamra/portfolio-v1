@@ -52,7 +52,7 @@ const Projects = ({projects}) => {
         <SectionTitle.Line/>
       </SectionTitle>
       <p>
-        Here are some things I've been working on recently.
+        Here are some of the projects I've built.
       </p>
       <Section.Spacer />
 
@@ -70,7 +70,8 @@ export default Projects;
 
 const ProjectTitle = styled.h3`
   /* color: rgb(204, 214, 246); */
-  color: white;
+  display: inline-flex;
+  color: ${colors.subtext};
   font-weight: 500;
   transition: color 100ms ease;
 

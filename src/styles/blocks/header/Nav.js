@@ -18,7 +18,7 @@ const NavList = styled.ul`
 
 const StyledAchor = styled.a`
   text-decoration: none;
-  color: white;
+  color: ${colors.subtext};
   transition: color 300ms ease;
   
   :hover {
@@ -31,9 +31,9 @@ const StyledAchor = styled.a`
 const Nav = () => (
   <NavWrapper>
     <NavList>
-      <ListLink color='white' to="/#about"> About</ListLink>
-      <ListLink color='white' to="/#projects">Projects</ListLink>
-      <ListLink color='white' to="/#contact">Contact</ListLink>
+      <ListLink color={colors.subtext} to="/#about"> About</ListLink>
+      <ListLink color={colors.subtext} to="/#projects">Projects</ListLink>
+      <ListLink color={colors.subtext} to="/#contact">Contact</ListLink>
       <li style={{display: 'inline-block', fontSize: 'inherit'}}>
         <StyledAchor href={Resume} aria-label="Resume">Resume</StyledAchor>
       </li>

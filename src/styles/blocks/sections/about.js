@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, SectionTitle } from './section';
-import { breakpoints } from '../../theme';
+import { colors,breakpoints } from '../../theme';
 
 
 const About = () => {
@@ -77,7 +77,7 @@ const Description = styled.p`
 `;
 
 const SubHeading = styled.h3`
-  color: white;
+  color: ${colors.subtext};
 `;
 
 const ListArea = styled.div`

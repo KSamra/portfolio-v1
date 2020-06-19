@@ -1,17 +1,22 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import SYAImage from './sya';
+import StartupImage from './startups';
 
 export const ProjectImage = (name) => {
   switch (name) {
     case 'Pokedex.png':
       return (
-        <StyledPokedexImage alt="Pokedex project image"/>
+        <PokedexImage alt="Pokedex project image"/>
       ) 
 
-    case 'astro':
-      break;
+    case 'SYA.png':
+      return (<SYAImage alt="SYA project image"/>)
+
+    case 'startup_analysis.png':
+      return (<StartupImage alt="Starup project image"/>)
   
     default:
       console.error(`${name} is not an image found in the static image folder`);
@@ -37,7 +42,9 @@ const PokedexImage = () => {
   return <Img fluid={data.imageOne.childImageSharp.fluid} alt="Project Image" />
 }
 
-const StyledPokedexImage = styled(PokedexImage)`
-  object-fit: cover;
-  width: 50%;
-`;
+
+
+// const StyledPokedexImage = styled(PokedexImage)`
+//   object-fit: cover;
+//   width: 50%;
+// `;
