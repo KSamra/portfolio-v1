@@ -7,7 +7,8 @@
     "github": "https://github.com/KSamra/pokedex",
     "link": "",
     "tech": ["React.js", "Node.js", "Apollo-GraphQL", "MongoDB"],
-    "slug": "pokedex"
+    "slug": "pokedex",
+    "learned": "Working on this project taught me the benefits/drawbacks of using GraphQL over REST and how to scrape for missing data. The backend is a GraphQL API made using Apollo Server that connects to a MongoDB database. Through building the frontend I learned the various ways to use CSS in React (I chose styled-components) along with modern CSS pattersn such as Flexbox and Grid."  
   },
   {
     "id": 2,
@@ -17,16 +18,18 @@
     "github": "https://github.com/KSamra/sya-react-aws",
     "link": "",
     "tech": ["React.js", "Node.js", "AWS Lambda", "AWS Cognito", "DynamoDB"],
-    "slug": "share-yourself-artists"
+    "slug": "share-yourself-artists",
+    "learned": "Project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing API's hosted on AWS Lambda, and enabling authentication via AWS Cognito. "
   },
   {
     "id": 3,
     "title": "Startup Analysis",
-    "desc": "Data Analysis project attempting to answer questions about startup investments.",
+    "desc": "Data Visualization project attempting to answer a number of questions about startup investments. Data was sourced from Crunchbase up to 2015.",
     "image": "startup_analysis.png",
     "github": "https://github.com/KSamra/Successful-Startups",
     "link": "https://startup-analysis-681e1.web.app/",
     "tech": ["Python", "Pandas", "Bokeh", "HTML"],
-    "slug": "startup-analysis"
+    "slug": "startup-analysis",
+    "learned": "Through working on this project I learned how powerful and simple tools like Pandas and NumPy are for data analysis projects. The data visualization library Bokeh was chosen in order to make the visualizations interactive. This project has made me interested in working on more data visualization projects in the future, especially since I am now much more experienced with CSS."
   }
 ]

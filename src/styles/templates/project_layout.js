@@ -58,9 +58,8 @@ export default function Project({ data }) {
 
           <SubHeading> What I Learned </SubHeading> 
 
-          <TextContent>Completing this project taught me how to
-            use React and setup a Apollo GraphQL Server. This is a cool project and I enjoyed
-            working on it without any help from anyone else
+          <TextContent>
+            {project.learned}
           </TextContent>
 
           
@@ -172,6 +171,7 @@ const ProjectImageContainer = styled.div`
       desc
       tech
       link
+      learned
     }
   }
 `

@@ -37,6 +37,7 @@ const About = () => {
           <li>MongoDB</li>
           <li>AWS</li>
           <li>Firebase</li>
+          <li>Pandas</li>
           
         </List>
         </ColumnFlex>

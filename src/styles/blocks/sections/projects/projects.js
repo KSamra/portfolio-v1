@@ -66,7 +66,7 @@ const Projects = ({projects}) => {
 
       {projectList}
       <div style={{content: 'none', marginBottom: '5rem'}}></div>
-      <ButtonLink internal={false} to="https://github.com/KSamra" label={"See More"}/> 
+      <ButtonLink internal={false} to="https://github.com/KSamra" label={"More on Github"}/> 
       
     </Section>
   )
