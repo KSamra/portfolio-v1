@@ -1,13 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import {breakpoints } from '../styles/theme';
+import React from "react"
+import styled from "styled-components"
+import { breakpoints } from "../styles/theme"
 
 const Icon = () => (
-
-
-  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    viewBox="0 0 16 16"
+    version="1.1"
+    aria-hidden="true"
+  >
     <title>Location</title>
-    <path 
+    <path
       d="M11.536 3.46401C12.0004 3.92832 12.3689 
         4.47957 12.6202 5.08629C12.8716 5.693 
         13.0009 6.34329 13.0009 7.00001C13.0009 7.65673 12.8716 8.30701 
@@ -26,12 +30,10 @@ const Icon = () => (
         9.061 15.132L12.596 11.596ZM8 9.00001C8.53044 9.00001 9.03914 8.78929 9.41422 8.41422C9.78929 
         8.03915 10 7.53044 10 7.00001C10 6.46957 9.78929 5.96087 9.41422 5.58579C9.03914 5.21072 8.53044 
         5.00001 8 5.00001C7.46957 5.00001 6.96086 5.21072 6.58579 5.58579C6.21072 5.96087 6 6.46957 
-        6 7.00001C6 7.53044 6.21072 8.03915 6.58579 8.41422C6.96086 8.78929 7.46957 9.00001 8 9.00001Z">
-    </path>
+        6 7.00001C6 7.53044 6.21072 8.03915 6.58579 8.41422C6.96086 8.78929 7.46957 9.00001 8 9.00001Z"
+    ></path>
   </svg>
-
 )
-
 
 const StyledLocationIcon = styled.div`
   display: flex;
@@ -39,24 +41,23 @@ const StyledLocationIcon = styled.div`
   svg {
     width: 1.5rem;
     height: 1.5rem;
-    
+
     @media ${breakpoints.md} {
       width: 2rem;
-      height: 2rem; 
+      height: 2rem;
     }
 
     fill: rgb(204, 214, 246);
     margin: auto 0;
     margin-right: 1rem;
   }
-   
-`; 
+`
 
 const LocationIcon = () => (
   <StyledLocationIcon>
     <Icon />
-    <p>Los Angeles, CA</p> 
+    <p>Los Angeles, CA</p>
   </StyledLocationIcon>
 )
 
-export default LocationIcon;
+export default LocationIcon

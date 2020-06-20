@@ -1,14 +1,11 @@
-import styled from 'styled-components';
-import React from 'react';
+import styled from "styled-components"
+import React from "react"
 
 const Backdrop = props => {
+  return props.isOpen ? <StyledBackdrop onClick={props.clickHandler} /> : null
+}
 
-    return (
-      props.isOpen ? <StyledBackdrop onClick={props.clickHandler} /> : null
-    )
-};
-
-export default Backdrop;
+export default Backdrop
 
 const StyledBackdrop = styled.div`
   position: fixed;
@@ -16,8 +13,6 @@ const StyledBackdrop = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.15);
+  background: rgba(0, 0, 0, 0.15);
   z-index: 7;
-
-`;
-
+`

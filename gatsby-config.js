@@ -17,8 +17,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/`,
-        name: "content"
-      }
+        name: "content",
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -32,11 +32,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/icons/logo.svg`
+        icon: `src/icons/logo.svg`,
       },
     },
-    'gatsby-transformer-remark',
-    'gatsby-plugin-styled-components',
+    "gatsby-transformer-remark",
+    "gatsby-plugin-styled-components",
     `gatsby-plugin-offline`,
   ],
 }

@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import FontFaces from './fonts';
+import { createGlobalStyle } from "styled-components"
+import FontFaces from "./fonts"
 
-import { fonts } from '../styles/theme';
+import { fonts } from "../styles/theme"
 
 export const GlobalStyle = createGlobalStyle`
   
@@ -47,4 +47,4 @@ export const GlobalStyle = createGlobalStyle`
     display: block;
     box-sizing: border-box;
   }
-`;
+`

@@ -1,20 +1,17 @@
-import styled from 'styled-components';
-
-
+import styled from "styled-components"
 
 export const Section = styled.section`
   margin: 5rem 0;
   width: 100%;
-  min-height: ${({child}) => child === 'last' ? '30vh' : '80vh'};
+  min-height: ${({ child }) => (child === "last" ? "30vh" : "80vh")};
   display: flex;
   flex-direction: column;
   align-items: center;
 
-
   h2 {
     /* font-size: 4rem; */
     /* Need to test to see if clamp works on Mobile Safari and Safari */
-    font-size: clamp(3.5rem, 2vw ,4rem );
+    font-size: clamp(3.5rem, 2vw, 4rem);
     width: 100%;
   }
 
@@ -27,10 +24,7 @@ export const Section = styled.section`
     font-size: clamp(1.2rem, 2vw, 1.6rem);
     line-height: 1.6;
   }
-
-
-  
-`;
+`
 
 export const SectionTitle = styled.h2`
   font-weight: 700;
@@ -40,19 +34,18 @@ export const SectionTitle = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
-
-`;
+`
 
 const SectionLine = styled.span`
-  background: #303C55;
+  background: #303c55;
   height: 1px;
   display: inline-block;
   margin: 0 1rem;
-`;
+`
 
 const SectionSpacer = styled.div`
   margin-top: 2rem;
-`;
+`
 
-SectionTitle.Line = SectionLine;
-Section.Spacer = SectionSpacer;
+SectionTitle.Line = SectionLine
+Section.Spacer = SectionSpacer

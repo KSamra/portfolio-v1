@@ -1,25 +1,43 @@
-import styled from 'styled-components';
-import React from 'react';
-import { Link } from "gatsby";
-import Resume from '../../../../content/test.pdf';
-import {colors } from '../../theme';
+import styled from "styled-components"
+import React from "react"
+import { Link } from "gatsby"
+import Resume from "../../../../content/test.pdf"
+import { colors } from "../../theme"
 
-const Menu = ({isOpen, clickHandler}) => {
+const Menu = ({ isOpen, clickHandler }) => {
   return (
     <MenuLinks isOpen={isOpen}>
       <StyledList>
-        <NavListItem onClick={clickHandler} to="/#about" aria-label="About">About</NavListItem>
-        <NavListItem onClick={clickHandler} to="/#projects" aria-label="View Projects">Projects</NavListItem>
-        <NavListItem onClick={clickHandler} to="/#contact" aria-label="Contact Me">Contact</NavListItem>
-        <OtherLink onClick={clickHandler} href={Resume} aria-label="View Resume">Resume</OtherLink>
+        <NavListItem onClick={clickHandler} to="/#about" aria-label="About">
+          About
+        </NavListItem>
+        <NavListItem
+          onClick={clickHandler}
+          to="/#projects"
+          aria-label="View Projects"
+        >
+          Projects
+        </NavListItem>
+        <NavListItem
+          onClick={clickHandler}
+          to="/#contact"
+          aria-label="Contact Me"
+        >
+          Contact
+        </NavListItem>
+        <OtherLink
+          onClick={clickHandler}
+          href={Resume}
+          aria-label="View Resume"
+        >
+          Resume
+        </OtherLink>
       </StyledList>
     </MenuLinks>
-    
   )
+}
 
-};
-
-export default Menu;
+export default Menu
 
 const MenuLinks = styled.nav`
   display: flex;
@@ -34,8 +52,8 @@ const MenuLinks = styled.nav`
   height: 100vh;
   width: 50%;
   transition: transform 300ms;
-  transform: ${({isOpen}) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
-`;
+  transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(100%)")};
+`
 
 const StyledList = styled.div`
   display: flex;
@@ -46,9 +64,7 @@ const StyledList = styled.div`
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
-
-  
-`;
+`
 
 const NavListItem = styled(Link)`
   font-size: 2rem;
@@ -56,13 +72,11 @@ const NavListItem = styled(Link)`
   /* color: rgb(136, 146, 176); */
   color: white;
   z-index: 10;
-  transition: color 100ms linear; 
-  :hover{
-    color: ${colors.primary}
+  transition: color 100ms linear;
+  :hover {
+    color: ${colors.primary};
   }
-
-
-`;
+`
 
 const OtherLink = styled.a`
   font-size: 2rem;
@@ -70,8 +84,8 @@ const OtherLink = styled.a`
   cursor: pointer;
   z-index: 10;
 
-  transition: color 100ms linear; 
-  :hover{
-    color: ${colors.primary}
+  transition: color 100ms linear;
+  :hover {
+    color: ${colors.primary};
   }
-`;
+`

@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react"
 
 const ExternalIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    viewBox="0 0 194.818 194.818"
+  >
     <title>External Link</title>
     <g>
       <path
@@ -15,6 +19,6 @@ const ExternalIcon = () => (
       />
     </g>
   </svg>
-);
+)
 
-export default ExternalIcon;
+export default ExternalIcon

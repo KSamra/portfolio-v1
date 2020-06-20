@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import React from 'react';
-import {colors} from '../../theme';
+import styled from "styled-components"
+import React from "react"
+import { colors } from "../../theme"
 
-const Hamburger = ({menuOpen, clickHandler}) => {
+const Hamburger = ({ menuOpen, clickHandler }) => {
   return (
     <HamburgerButton onClick={clickHandler} aria-label="Toggle Navigation Menu">
       <Icon menuOpen={menuOpen}>
@@ -12,9 +12,9 @@ const Hamburger = ({menuOpen, clickHandler}) => {
       </Icon>
     </HamburgerButton>
   )
-};
+}
 
-export default Hamburger;
+export default Hamburger
 
 const HamburgerButton = styled.button`
   cursor: pointer;
@@ -31,7 +31,7 @@ const HamburgerButton = styled.button`
   :focus {
     outline: none;
   }
-`;
+`
 
 const Icon = styled.div`
   cursor: pointer;
@@ -44,21 +44,21 @@ const Icon = styled.div`
 
   div {
     width: 2.5rem;
-    height: .3rem;
-    background: ${({menuOpen}) => menuOpen ? `${colors.primary}` : 'white'};
+    height: 0.3rem;
+    background: ${({ menuOpen }) => (menuOpen ? `${colors.primary}` : "white")};
     border-radius: 100px;
     transition: all 300ms;
 
     :first-child {
-      opacity: ${({menuOpen}) => menuOpen ? "0" : "1"};
-      transform: ${({menuOpen}) => menuOpen ? "translateX(-100%)" : "translateX(0)"};
+      opacity: ${({ menuOpen }) => (menuOpen ? "0" : "1")};
+      transform: ${({ menuOpen }) =>
+        menuOpen ? "translateX(-100%)" : "translateX(0)"};
     }
 
-   
-    :last-child{
-      transform: ${({menuOpen}) => menuOpen ? "translateX(100%)" : "translateX(0)"};
-      opacity: ${({menuOpen}) => menuOpen ? "0" : "1"};
+    :last-child {
+      transform: ${({ menuOpen }) =>
+        menuOpen ? "translateX(100%)" : "translateX(0)"};
+      opacity: ${({ menuOpen }) => (menuOpen ? "0" : "1")};
     }
-
   }
-`;
+`

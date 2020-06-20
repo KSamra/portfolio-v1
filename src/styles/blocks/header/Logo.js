@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { IconLogo} from '../../../icons/index';
-import {Link} from 'gatsby';
+import React from "react"
+import styled from "styled-components"
+import { IconLogo } from "../../../icons/index"
+import { Link } from "gatsby"
 
 const StyledLogo = styled.div`
   margin-top: 1rem;
@@ -10,8 +10,7 @@ const StyledLogo = styled.div`
     height: 5rem;
     width: 5rem;
   }
-`;
-
+`
 
 const Logo = () => (
   <StyledLogo>
@@ -19,6 +18,6 @@ const Logo = () => (
       <IconLogo />
     </Link>
   </StyledLogo>
-);
+)
 
-export default Logo;
+export default Logo

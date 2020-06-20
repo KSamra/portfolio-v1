@@ -1,18 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {GlobalStyle} from '../styles/globalStyle';
+import { GlobalStyle } from "../styles/globalStyle"
 
 // import Header from "./header"
-import Header from '../styles/blocks/header/index';
-import Footer from '../styles/blocks/footer';
-import MobileNav from '../styles/blocks/mobileHeader/index';
-import {Center} from '../styles/theme';
+import Header from "../styles/blocks/header/index"
+import Footer from "../styles/blocks/footer"
+import MobileNav from "../styles/blocks/mobileHeader/index"
+import { Center } from "../styles/theme"
 
 // import "./layout.css"
 
 const Layout = ({ children }) => {
-  
-
   return (
     <div>
       <GlobalStyle />
@@ -24,8 +22,8 @@ const Layout = ({ children }) => {
       <Center>
         <main>{children}</main>
         <Footer />
-        
-          {/* © {new Date().getFullYear()}, Built with */}
+
+        {/* © {new Date().getFullYear()}, Built with */}
       </Center>
     </div>
   )

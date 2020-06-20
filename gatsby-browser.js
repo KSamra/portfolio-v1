@@ -6,9 +6,7 @@
 
 // You can delete this file if you're not using it
 
-
-
-// Re-enables 'jump-to-hash` on initial page load and subsequent route changes. Refer 
+// Re-enables 'jump-to-hash` on initial page load and subsequent route changes. Refer
 // to  https://github.com/gatsbyjs/gatsby/issues/21120
 exports.onRouteUpdate = ({ location }) => scrollToAnchor(location)
 

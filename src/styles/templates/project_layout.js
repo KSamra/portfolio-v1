@@ -1,36 +1,34 @@
-import styled from 'styled-components';
-import React from 'react';
-import Layout from '../../components/layout';
-import { graphql } from 'gatsby';
-import { Section } from '../blocks/sections/section';
-import { colors, breakpoints } from '../theme';
-import { ProjectImage } from '../blocks/sections/projects/images';
-import SEO from '../../components/seo';
+import styled from "styled-components"
+import React from "react"
+import Layout from "../../components/layout"
+import { graphql } from "gatsby"
+import { Section } from "../blocks/sections/section"
+import { colors, breakpoints } from "../theme"
+import { ProjectImage } from "../blocks/sections/projects/images"
+import SEO from "../../components/seo"
 
-import { IconLink } from '../blocks/sections/projects/projects';
+import { IconLink } from "../blocks/sections/projects/projects"
 
-import {IconExternal, IconGithub} from '../../icons/index';
+import { IconExternal, IconGithub } from "../../icons/index"
 
 /**
- * 
+ *
  * Layout for detailed project pages
  */
 
 export default function Project({ data }) {
+  const project = data.projectsJson
+  const tech = Array.from(project.tech)
 
-  const project = data.projectsJson;
-  const tech = Array.from(project.tech);
-
-  let id = 0;  
+  let id = 0
   let techList = tech.map(element => {
     return <li key={id++}>{element}</li>
   })
 
   return (
     <Layout>
-      <SEO title={`Kavan Samra | ${project.title}`}/>
+      <SEO title={`Kavan Samra | ${project.title}`} />
       <Section>
-
         <Title>{project.title}</Title>
 
         <ProjectImageContainer>
@@ -40,38 +38,41 @@ export default function Project({ data }) {
         <TextArea>
           <Excerpt>{project.desc}</Excerpt>
 
-          <div style={{display: 'flex', width: '10rem', justifyContent: 'space-evenly'}}>
-            <IconLink href={project.github} aria-label="View Source Code on Github" title="Github Source">
-                <IconGithub />
+          <div
+            style={{
+              display: "flex",
+              width: "10rem",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <IconLink
+              href={project.github}
+              aria-label="View Source Code on Github"
+              title="Github Source"
+            >
+              <IconGithub />
             </IconLink>
-            {
-              project.link ? <IconLink href={project.github} aria-label="View Live" title="View Live">
-                                <IconExternal />
-                              </IconLink> : null
-            }
-            
+            {project.link ? (
+              <IconLink
+                href={project.github}
+                aria-label="View Live"
+                title="View Live"
+              >
+                <IconExternal />
+              </IconLink>
+            ) : null}
           </div>
           <SubHeading>Built With</SubHeading>
-          <List>
-            {techList}
-          </List>
+          <List>{techList}</List>
 
-          <SubHeading> What I Learned </SubHeading> 
+          <SubHeading> What I Learned </SubHeading>
 
-          <TextContent>
-            {project.learned}
-          </TextContent>
-
-          
-
+          <TextContent>{project.learned}</TextContent>
         </TextArea>
-
       </Section>
     </Layout>
-  );
-};
-
-
+  )
+}
 
 const Title = styled.h1`
   color: white;
@@ -81,18 +82,14 @@ const Title = styled.h1`
   @media ${breakpoints.lg} {
     font-size: 4rem;
   }
-`;
+`
 
-
-
-const Excerpt = styled.p`
-
-`;
+const Excerpt = styled.p``
 
 const SubHeading = styled.h3`
   align-self: flex-start;
   color: ${colors.subtext};
-`;
+`
 
 const TextArea = styled.div`
   width: 100%;
@@ -111,20 +108,17 @@ const TextArea = styled.div`
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
     }
-
   }
 
   h3 {
     font-size: 2rem;
     margin: 2rem 0;
 
-    @media ${breakpoints.sm}{
+    @media ${breakpoints.sm} {
       font-size: 2.5rem;
     }
   }
-
-
-`;
+`
 
 const List = styled.ul`
   align-self: flex-start;
@@ -137,33 +131,31 @@ const List = styled.ul`
   margin: 0;
   list-style-position: inside;
   box-sizing: border-box;
-  
+
   li {
     font-size: 1.2rem;
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
     }
 
-    &:last-child{ 
+    &:last-child {
       margin: 0;
     }
   }
-`;
+`
 
 const TextContent = styled.p`
   align-self: flex-start;
   margin: 0;
-
-`;
+`
 
 const ProjectImageContainer = styled.div`
   width: 90%;
-`;
+`
 
-
- export const query = graphql`
+export const query = graphql`
   query($slug: String!) {
-    projectsJson(slug: { eq: $slug}) {
+    projectsJson(slug: { eq: $slug }) {
       title
       github
       slug

@@ -1,18 +1,18 @@
-import React, {useState} from 'react';
-import styled from 'styled-components';
-import {Link } from 'gatsby';
-import { breakpoints } from '../../theme';
-import Hamburger from './Hamburger';
-import Menu from './Menu';
-import Backdrop from './Backdrop';
-import {IconLogo} from '../../../icons/index';
+import React, { useState } from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
+import { breakpoints } from "../../theme"
+import Hamburger from "./Hamburger"
+import Menu from "./Menu"
+import Backdrop from "./Backdrop"
+import { IconLogo } from "../../../icons/index"
 
 const MobileNav = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const handleClick = () => {
-    setMenuOpen(isOpen => !isOpen);
-  };
+    setMenuOpen(isOpen => !isOpen)
+  }
 
   return (
     <Header>
@@ -21,8 +21,8 @@ const MobileNav = () => {
           <IconLogo />
         </Link>
       </Logo>
-      
-      <Hamburger menuOpen={menuOpen} clickHandler={handleClick}/>
+
+      <Hamburger menuOpen={menuOpen} clickHandler={handleClick} />
 
       {/* Try with a conditional render but this may not be smooth enough.
           If so, let's adjust using css and hide it with some translations and perhaps the display property */}
@@ -33,10 +33,9 @@ const MobileNav = () => {
   )
 }
 
-export default MobileNav;
+export default MobileNav
 
 const Header = styled.header`
-
   @media ${breakpoints.lg} {
     display: none;
   }
@@ -49,14 +48,13 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
+`
 
 const Logo = styled.div`
-    margin-top: 1rem;
+  margin-top: 1rem;
 
   svg {
     height: 5rem;
     width: 5rem;
   }
-`;
-
+`

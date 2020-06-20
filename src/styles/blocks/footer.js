@@ -1,21 +1,23 @@
-import styled from 'styled-components';
-import React from 'react';
-import {colors, breakpoints} from '../theme';
+import styled from "styled-components"
+import React from "react"
+import { colors, breakpoints } from "../theme"
 
-import {IconGithub, IconTwitter, IconLinkedIn} from '../../icons/index';
+import { IconGithub, IconTwitter, IconLinkedIn } from "../../icons/index"
 
 const Footer = () => (
   <StyledFooter>
     <SiteDesc>
       <p>Built by Kavan Samra</p>
-      <SourceLink href="https://github.com/KSamra/portfolio-v1" aria-label="View Source Code">
+      <SourceLink
+        href="https://github.com/KSamra/portfolio-v1"
+        aria-label="View Source Code"
+      >
         View Source
       </SourceLink>
-
     </SiteDesc>
     <Flex>
       <a href="https://twitter.com/kavansamra" aria-label="Twitter Profile">
-        <IconTwitter/>
+        <IconTwitter />
       </a>
       <a href={"https://github.com/KSamra"} aria-label="Github Profile">
         <IconGithub />
@@ -23,19 +25,13 @@ const Footer = () => (
       <a href={"https://linkedin.com"} aria-label="Linked In Profile">
         <IconLinkedIn />
       </a>
-      
-      
     </Flex>
-    
   </StyledFooter>
+)
 
-);
-
-export default Footer;
-
+export default Footer
 
 const StyledFooter = styled.footer`
-
   width: 100%;
   display: flex;
   justify-content: center;
@@ -43,7 +39,7 @@ const StyledFooter = styled.footer`
   flex-direction: column;
 
   svg {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
     fill: rgb(204, 214, 246);
@@ -51,11 +47,10 @@ const StyledFooter = styled.footer`
     cursor: pointer;
 
     :hover {
-      fill-opacity: .5;
+      fill-opacity: 0.5;
     }
   }
-
-`;
+`
 
 const SiteDesc = styled.div`
   display: flex;
@@ -64,16 +59,15 @@ const SiteDesc = styled.div`
   width: 100%;
   flex-direction: column;
 
-  p,a {
+  p,
+  a {
     font-size: 1.2rem;
 
     @media ${breakpoints.md} {
       font-size: 1.6rem;
     }
   }
-
-  
-`;
+`
 
 const SourceLink = styled.a`
   text-decoration: none;
@@ -81,12 +75,11 @@ const SourceLink = styled.a`
   cursor: pointer;
   color: ${colors.primary};
   box-sizing: border-box;
-  
 
   :hover {
     border-bottom: 1px solid ${colors.primary};
   }
-`;
+`
 
 const Flex = styled.div`
   min-width: 10rem;
@@ -98,10 +91,4 @@ const Flex = styled.div`
   a {
     text-decoration: none;
   }
-
-
-`;
-  
-
-
-
+`

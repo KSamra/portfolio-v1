@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import Nav from './Nav';
-import Title from './Title';
-import Logo from './Logo';
-import { breakpoints } from '../../theme'
+import styled from "styled-components"
+import Nav from "./Nav"
+import Title from "./Title"
+import Logo from "./Logo"
+import { breakpoints } from "../../theme"
 
 const Header = styled.header`
   display: none;
@@ -13,11 +13,10 @@ const Header = styled.header`
     justify-content: space-between;
     align-items: center;
   }
-  
-`;
+`
 
-Header.Nav = Nav;
-Header.Title = Title;
-Header.Logo = Logo;
+Header.Nav = Nav
+Header.Title = Title
+Header.Logo = Logo
 
-export default Header;
+export default Header

@@ -5,8 +5,8 @@
  */
 
 // You can delete this file if you're not using it
-const path = require('path');
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require("path")
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -21,24 +21,24 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   const result = await graphql(`
     query {
-      allProjectsJson{
+      allProjectsJson {
         edges {
           node {
             slug
           }
         }
       }
-    } 
+    }
   `)
 
   result.data.allProjectsJson.edges.forEach(({ node }) => {
     createPage({
       path: node.slug,
-      component: path.resolve('./src/styles/templates/project_layout.js'),
+      component: path.resolve("./src/styles/templates/project_layout.js"),
       context: {
         //Data passed to context is available in page queries as GraphQL variables
         slug: node.slug,
