@@ -3,7 +3,7 @@ import { Section } from "../section"
 import { ButtonLink } from "../../../elements/Links"
 import { IconLocation } from "../../../../icons/index"
 import React from "react"
-import { colors } from "../../../theme"
+import { colors, breakpoints } from "../../../theme"
 
 const Intro = styled.p`
   color: ${colors.primary};
@@ -28,14 +28,19 @@ const About = styled.h3`
   margin-bottom: 0;
 `
 
+const Padder = styled.div`
+  padding-top: 5vh;
+  box-sizing: border-box;
+
+  @media ${breakpoints.md} {
+    padding-top: 10vh;
+  }
+
+`;
+
 const WhoAmI = () => (
   <Section>
-    <div
-      style={{
-        paddingTop: "15vh",
-        boxSizing: "border-box",
-      }}
-    >
+    <Padder>
       <Intro>Hello, my name is</Intro>
       <HeroName>Kavan Samra</HeroName>
       <About>
@@ -48,7 +53,7 @@ const WhoAmI = () => (
         to={"mailto:samrakavan@gmail.com"}
         label="Contact"
       />
-    </div>
+    </Padder>
   </Section>
 )
 
