@@ -24,8 +24,8 @@ const HamburgerButton = styled.button`
   justify-content: flex-end;
   align-items: center;
   position: fixed;
-  right: 1rem;
-  top: 1rem;
+  right: .5rem;
+  top: 2.5rem;
   z-index: 12;
 
   :focus {

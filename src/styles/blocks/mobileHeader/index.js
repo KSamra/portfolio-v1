@@ -51,7 +51,7 @@ const Header = styled.header`
 `
 
 const Logo = styled.div`
-  margin-top: 1rem;
+  margin-top: .5rem;
 
   svg {
     height: 5rem;
