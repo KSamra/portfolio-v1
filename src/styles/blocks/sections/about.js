@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Section, SectionTitle } from "./section"
-import { colors, breakpoints } from "../../theme"
+import { font_sizes,colors, breakpoints } from "../../theme"
 
 const About = () => {
   return (
@@ -59,10 +59,10 @@ const List = styled.ul`
   /* color: white; */
   li {
     margin: 0.5rem 1rem 0 0;
-    font-size: 1.2rem;
+    font-size: ${font_sizes.mobile};
 
     @media ${breakpoints.sm} {
-      font-size: 1.6rem;
+      font-size: ${font_sizes.desktop};
     }
   }
 `

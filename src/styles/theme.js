@@ -39,3 +39,9 @@ export const colors = {
   primary: "rgb(255, 167, 196)",
   subtext: "rgb(204, 214, 246)",
 }
+
+
+export const font_sizes = {
+  mobile: '1.4rem',
+  desktop: '1.6rem'
+}
