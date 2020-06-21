@@ -19,7 +19,7 @@ import { IconExternal, IconGithub } from "../../icons/index"
 export default function Project({ data }) {
   const project = data.projectsJson
   const tech = Array.from(project.tech)
-
+  const seoImage = data.imageSharp.resize.src;
   let id = 0
   let techList = tech.map(element => {
     return <li key={id++}>{element}</li>
@@ -27,7 +27,7 @@ export default function Project({ data }) {
 
   return (
     <Layout>
-      <SEO title={`Kavan Samra | ${project.title}`} />
+      <SEO title={`Kavan Samra | ${project.title}`} image={seoImage} path={project.slug}/>
       <Section>
         <Title>{project.title}</Title>
 
@@ -154,7 +154,7 @@ const ProjectImageContainer = styled.div`
 `
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String!, $image: String) {
     projectsJson(slug: { eq: $slug }) {
       title
       github
@@ -164,6 +164,14 @@ export const query = graphql`
       tech
       link
       learned
+    }
+
+    imageSharp(resize: {originalName: {eq: $image}}) {
+      resize(width: 1080){
+        src
+        width
+        height
+      } 
     }
   }
 `

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Section, SectionTitle } from "../section"
 import React from "react"
-import {font_sizes, colors, breakpoints } from "../../../theme"
+import { colors, breakpoints } from "../../../theme"
 import { IconGithub, IconExternal } from "../../../../icons/index"
 import { ProjectImage } from "./images"
 import { ButtonLink } from "../../../elements/Links"

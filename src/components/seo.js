@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image, path }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,13 +20,19 @@ function SEO({ description, lang, meta, title }) {
             description
             author
             keywords
+            siteUrl
           }
         }
       }
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
+
+  let url = site.siteMetadata.siteUrl;
+  if(path){
+    url = url.concat(`/${path}`);
+  }
 
   return (
     <Helmet
@@ -53,16 +59,16 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: url,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitter,
         },
         {
           name: `twitter:title`,
@@ -72,7 +78,32 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata.twitter
+        }
+      ].concat(
+        image ? [
+          {
+            property: `og:image`,
+            content: image
+          },
+          {
+            name: "twitter:card",
+            content: "summary_large_image",
+          },
+          {
+            name: "twitter:image",
+            content: image,
+          }
+        ]
+        : [
+          {
+            name: "twitter:card",
+            content: "summary",
+          }
+        ]
+      ).concat(meta)}
     />
   )
 }
