@@ -30,8 +30,13 @@ function SEO({ description, lang, meta, title, image, path }) {
   const metaDescription = description || site.siteMetadata.description;
 
   let url = site.siteMetadata.siteUrl;
+  let imageFullPath = null;
   if(path){
     url = url.concat(`/${path}`);
+  }
+  if(image){
+    console.log('received an image!')
+    imageFullPath = `${site.siteMetadata.siteUrl}${image}`;
   }
 
   return (
@@ -86,7 +91,7 @@ function SEO({ description, lang, meta, title, image, path }) {
         image ? [
           {
             property: `og:image`,
-            content: image
+            content: imageFullPath
           },
           {
             name: "twitter:card",
@@ -94,7 +99,7 @@ function SEO({ description, lang, meta, title, image, path }) {
           },
           {
             name: "twitter:image",
-            content: image,
+            content: imageFullPath,
           }
         ]
         : [
