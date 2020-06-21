@@ -27,17 +27,17 @@ function SEO({ description, lang, meta, title, image, path }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site.siteMetadata.description
 
-  let url = site.siteMetadata.siteUrl;
-  let imageFullPath = null;
-  if(path){
-    url = url.concat(`/${path}`);
+  let url = site.siteMetadata.siteUrl
+  let imageFullPath = null
+  if (path) {
+    url = url.concat(`/${path}`)
   }
-  if(image){
-    console.log('received an image!', image)
-    imageFullPath = `${site.siteMetadata.siteUrl}${image}`;
-    console.log(imageFullPath);
+  if (image) {
+    console.log("received an image!", image)
+    imageFullPath = `${site.siteMetadata.siteUrl}${image}`
+    console.log(imageFullPath)
   }
 
   return (
@@ -86,30 +86,33 @@ function SEO({ description, lang, meta, title, image, path }) {
         },
         {
           name: `twitter:site`,
-          content: site.siteMetadata.twitter
-        }
-      ].concat(
-        image ? [
-          {
-            property: `og:image`,
-            content: imageFullPath
-          },
-          {
-            name: "twitter:card",
-            content: "summary_large_image",
-          },
-          // {
-          //   name: "twitter:image",
-          //   content: imageFullPath,
-          // }
-        ]
-        : [
-          {
-            name: "twitter:card",
-            content: "summary",
-          }
-        ]
-      ).concat(meta)}
+          content: site.siteMetadata.twitter,
+        },
+      ]
+        .concat(
+          image
+            ? [
+                {
+                  property: `og:image`,
+                  content: imageFullPath,
+                },
+                {
+                  name: "twitter:card",
+                  content: "summary_large_image",
+                },
+                // {
+                //   name: "twitter:image",
+                //   content: imageFullPath,
+                // }
+              ]
+            : [
+                {
+                  name: "twitter:card",
+                  content: "summary",
+                },
+              ]
+        )
+        .concat(meta)}
     />
   )
 }

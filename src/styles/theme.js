@@ -40,8 +40,7 @@ export const colors = {
   subtext: "rgb(204, 214, 246)",
 }
 
-
 export const font_sizes = {
-  mobile: '1.4rem',
-  desktop: '1.6rem'
+  mobile: "1.4rem",
+  desktop: "1.6rem",
 }

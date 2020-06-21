@@ -3,9 +3,21 @@ module.exports = {
     title: `Software Developer`,
     description: `Software developer located in Los Angeles, CA currently seeking a role as a junior developer.`,
     author: `Kavan Samra`,
-    keywords: ["Kavan Samra", "KSamra", "software developer", "software engineer", "Los Angeles", "LA", "California", "UC Santa Cruz", "University of California","web developer", "programmer"],
+    keywords: [
+      "Kavan Samra",
+      "KSamra",
+      "software developer",
+      "software engineer",
+      "Los Angeles",
+      "LA",
+      "California",
+      "UC Santa Cruz",
+      "University of California",
+      "web developer",
+      "programmer",
+    ],
     siteUrl: "https://www.kavansamra.com",
-    twitter: "@kavansamra"
+    twitter: "@kavansamra",
   },
   plugins: [
     {

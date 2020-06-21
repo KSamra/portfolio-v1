@@ -35,8 +35,7 @@ const Padder = styled.div`
   @media ${breakpoints.md} {
     padding-top: 10vh;
   }
-
-`;
+`
 
 const WhoAmI = () => (
   <Section>

@@ -175,7 +175,7 @@ const TechContainer = styled.div`
     font-size: 1rem;
     color: whitesmoke;
 
-    @media ${breakpoints.md}{
+    @media ${breakpoints.md} {
       font-size: 1.2rem;
     }
   }

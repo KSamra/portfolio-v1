@@ -9,13 +9,11 @@ import Projects from "../styles/blocks/sections/projects/projects"
 import Contact from "../styles/blocks/sections/contact"
 
 const IndexPage = ({ data }) => {
-
-  const image = data.file.childImageSharp.resize.src;
-
+  const image = data.file.childImageSharp.resize.src
 
   return (
     <Layout>
-      <SEO title="Kavan Samra" image={image}/>
+      <SEO title="Kavan Samra" image={image} />
 
       <WhoAmI />
       <About />
@@ -44,9 +42,9 @@ export const query = graphql`
       }
     }
 
-    file(relativePath: {eq: "home.jpg"}){
+    file(relativePath: { eq: "home.jpg" }) {
       childImageSharp {
-        resize(width: 1080){
+        resize(width: 1080) {
           src
           width
           height
