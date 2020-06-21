@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Software Developer`,
-    description: `Kavan Samra is a Software Developer located in Los Angeles, CA who is currently seeking a Junior Developer position.`,
+    description: `Software Developer located in Los Angeles, CA who is currently seeking a Junior Developer position.`,
     author: `Kavan Samra`,
+    keywords: ["Kavan Samra", "KSamra", "software developer", "software engineer", "Los Angeles", "LA", "California", "UC Santa Cruz", "University of California","web developer", "programmer"],
+    siteURl: "https://www.kavansamra.com",
   },
   plugins: [
     {
