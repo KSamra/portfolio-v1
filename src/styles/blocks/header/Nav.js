@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { ListLink } from "../../elements/Links"
 import React from "react"
-import Resume from "../../../../content/test.pdf"
+import Resume from "../../../../content/resume.pdf"
 import { colors } from "../../theme"
 
 const NavWrapper = styled.nav`
