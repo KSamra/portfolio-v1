@@ -98,7 +98,10 @@ function SEO({ description, lang, meta, title, image, path }) {
             name: "twitter:card",
             content: "summary_large_image",
           },
-          
+          // {
+          //   name: "twitter:image",
+          //   content: imageFullPath,
+          // }
         ]
         : [
           {
