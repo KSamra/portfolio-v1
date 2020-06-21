@@ -35,8 +35,9 @@ function SEO({ description, lang, meta, title, image, path }) {
     url = url.concat(`/${path}`);
   }
   if(image){
-    console.log('received an image!')
+    console.log('received an image!', image)
     imageFullPath = `${site.siteMetadata.siteUrl}${image}`;
+    console.log(imageFullPath);
   }
 
   return (
@@ -97,10 +98,7 @@ function SEO({ description, lang, meta, title, image, path }) {
             name: "twitter:card",
             content: "summary_large_image",
           },
-          {
-            name: "twitter:image",
-            content: imageFullPath,
-          }
+          
         ]
         : [
           {
