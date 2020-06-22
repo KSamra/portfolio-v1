@@ -6,6 +6,7 @@ import React from "react"
 import { fonts,colors, breakpoints } from "../../../theme"
 
 const Intro = styled.p`
+  font-family: ${fonts.Roboto};
   color: ${colors.primary};
   align-self: flex-start;
   line-height: 1;

@@ -83,7 +83,7 @@ const SourceLink = styled.a`
 
 const Flex = styled.div`
   min-width: 10rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;

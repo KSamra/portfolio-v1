@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const fonts = {
   RobotoMono: "Roboto Mono, Lucida Console, Monaco, monospace",
   Roboto: "Roboto",
-  blah: "system-ui,-apple-system,Roboto,Arial,sans-serif",
+  System: "system-ui,-apple-system,Roboto,Arial,sans-serif",
   SFMono: "SF Mono"
 }
 
@@ -24,7 +24,7 @@ export const breakpoints = {
 export const Center = styled.div`
   margin: 0 auto;
   max-width: ${points.lg};
-  padding: 0 5rem 5rem;
+  padding: 0 5rem 2rem;
 
   @media ${breakpoints.lg} {
     padding: 0 1.0875rem 1.45rem;

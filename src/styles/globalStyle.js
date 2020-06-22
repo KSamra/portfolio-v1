@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     color: rgb(136, 146, 176);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: ${fonts.blah};
+    font-family: ${fonts.System};
 
     line-height: 1.3;
     font-size: 1.6rem;
@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1,h2 {
-    font-family: ${fonts.blah}
+    font-family: ${fonts.System}
   }
 
   article,
