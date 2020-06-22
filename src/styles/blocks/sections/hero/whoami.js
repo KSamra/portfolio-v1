@@ -13,7 +13,7 @@ const Intro = styled.p`
 `
 
 const HeroName = styled.h1`
-  font-weight: 700;
+  font-weight: 600;
   color: white;
   margin: 1rem 0;
   font-size: 8rem;

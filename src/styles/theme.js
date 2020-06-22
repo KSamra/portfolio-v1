@@ -2,6 +2,9 @@ import styled from "styled-components"
 
 export const fonts = {
   RobotoMono: "Roboto Mono, Lucida Console, Monaco, monospace",
+  Roboto: "Roboto",
+  blah: "system-ui,-apple-system,Roboto,Arial,sans-serif",
+  SFMono: "SF Mono"
 }
 
 const points = {

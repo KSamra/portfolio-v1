@@ -1,11 +1,13 @@
 import { createGlobalStyle } from "styled-components"
-import FontFaces from "./fonts"
+import {MonoFontFaces, RobotoFontFaces, SFMonoFonts} from "./fonts"
 
 import { fonts } from "../styles/theme"
 
 export const GlobalStyle = createGlobalStyle`
   
-  ${FontFaces};
+  ${MonoFontFaces};
+  ${RobotoFontFaces};
+  ${SFMonoFonts};
 
   html {
     box-sizing: border-box;
@@ -20,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     color: rgb(136, 146, 176);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: ${fonts.RobotoMono};
+    font-family: ${fonts.blah};
 
     line-height: 1.3;
     font-size: 1.6rem;
@@ -30,6 +32,10 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     background-color: transparent;
+  }
+
+  h1,h2 {
+    font-family: ${fonts.RobotoMono}
   }
 
   article,
