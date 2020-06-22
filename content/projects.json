@@ -17,7 +17,7 @@
     "image": "SYA.png",
     "github": "https://github.com/KSamra/sya-react-aws",
     "link": "",
-    "tech": ["React.js", "Node.js", "AWS Lambda", "AWS Cognito", "DynamoDB"],
+    "tech": ["React.js", "Node.js", "AWS Lambda", "DynamoDB"],
     "slug": "share-yourself-artists",
     "learned": "Project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing API's hosted on AWS Lambda, and enabling authentication via AWS Cognito. "
   },

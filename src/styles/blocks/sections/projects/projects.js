@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Section, SectionTitle } from "../section"
 import React from "react"
-import { colors, breakpoints } from "../../../theme"
+import { fonts,colors, breakpoints } from "../../../theme"
 import { IconGithub, IconExternal } from "../../../../icons/index"
 import { ProjectImage } from "./images"
 import { ButtonLink } from "../../../elements/Links"
@@ -172,11 +172,11 @@ const TechContainer = styled.div`
   justify-content: space-around;
 
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: whitesmoke;
 
     @media ${breakpoints.md} {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
   }
 `

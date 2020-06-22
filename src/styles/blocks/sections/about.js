@@ -52,13 +52,13 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 10rem;
+  height: 12rem;
   width: 30rem;
   box-sizing: border-box;
   list-style-position: inside;
   /* color: white; */
   li {
-    margin: 0.5rem 1rem 0 0;
+    margin: 0.5rem 2rem 0 0;
     font-size: ${font_sizes.mobile};
 
     @media ${breakpoints.sm} {
@@ -69,8 +69,10 @@ const List = styled.ul`
 
 const Description = styled.p`
   width: 100%;
+  font-size: ${font_sizes.mobile};
 
   @media ${breakpoints.md} {
+    font-size: ${font_sizes.desktop};
     width: 70%;
   }
 `
