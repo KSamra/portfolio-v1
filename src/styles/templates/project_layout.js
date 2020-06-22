@@ -155,7 +155,11 @@ const TextContent = styled.p`
 `
 
 const ProjectImageContainer = styled.div`
-  width: 90%;
+  width: 100%;
+
+  @media ${breakpoints.md}{
+    width: 90%;
+  }
 `
 
 export const query = graphql`
