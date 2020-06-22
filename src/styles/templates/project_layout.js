@@ -81,11 +81,11 @@ export default function Project({ data }) {
 
 const Title = styled.h1`
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   align-self: center;
 
   @media ${breakpoints.lg} {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 `
 
@@ -108,7 +108,7 @@ const TextArea = styled.div`
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
@@ -116,11 +116,11 @@ const TextArea = styled.div`
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 2rem 0;
 
     @media ${breakpoints.sm} {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
   }
 `
@@ -138,7 +138,7 @@ const List = styled.ul`
   box-sizing: border-box;
 
   li {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     @media ${breakpoints.sm} {
       font-size: 1.6rem;
     }
