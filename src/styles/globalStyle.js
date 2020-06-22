@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1,h2 {
-    font-family: ${fonts.RobotoMono}
+    font-family: ${fonts.blah}
   }
 
   article,

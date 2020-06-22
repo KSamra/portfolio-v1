@@ -3,7 +3,7 @@ import { Section } from "../section"
 import { ButtonLink } from "../../../elements/Links"
 import { IconLocation } from "../../../../icons/index"
 import React from "react"
-import { colors, breakpoints } from "../../../theme"
+import { fonts,colors, breakpoints } from "../../../theme"
 
 const Intro = styled.p`
   color: ${colors.primary};
@@ -13,7 +13,8 @@ const Intro = styled.p`
 `
 
 const HeroName = styled.h1`
-  font-weight: 600;
+  font-family: ${fonts.RobotoMono};
+  font-weight: 700;
   color: white;
   margin: 1rem 0;
   font-size: 8rem;

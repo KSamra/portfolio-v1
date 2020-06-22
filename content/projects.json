@@ -8,7 +8,7 @@
     "link": "",
     "tech": ["React.js", "Node.js", "Apollo-GraphQL", "MongoDB"],
     "slug": "pokedex",
-    "learned": "Working on this project taught me the benefits/drawbacks of using GraphQL over REST and how to scrape for missing data. The backend is a GraphQL API made using Apollo Server that connects to a MongoDB database. Through building the frontend I learned the various ways to use CSS in React (I chose styled-components) along with modern CSS pattersn such as Flexbox and Grid."
+    "learned": "Working on this project taught me the benefits/drawbacks of using GraphQL over REST and how to scrape for missing data. The backend is a GraphQL API made using Apollo Server that connects to a MongoDB database. Through building the frontend I learned the various ways to use CSS in React (I chose styled-components) along with modern CSS patterns such as Flexbox and Grid."
   },
   {
     "id": 2,
