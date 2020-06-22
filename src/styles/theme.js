@@ -44,6 +44,6 @@ export const colors = {
 }
 
 export const font_sizes = {
-  mobile: "1.4rem",
-  desktop: "1.6rem",
+  mobile: "1.6rem",
+  desktop: "1.8rem",
 }
