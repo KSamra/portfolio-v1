@@ -11,10 +11,9 @@ const About = () => {
         <SectionTitle.Line />
       </SectionTitle>
       <Description>
-        I recently graduated from the University of California, Santa Cruz with
-        a B.S in Computer Science. Most of my experience relates to the web and
-        the M.E.R.N stack but I'm eager to learn any tech stack that is
-        required.
+        I've recently graduated from the University of California, Santa Cruz with
+        a B.S in Computer Science and am looking to join a team of awesome developers. Most of my experience relates to the web and
+        the M.E.R.N stack but I'm eager to learn any tech stack that is required.
       </Description>
       <ListArea>
         <ColumnFlex>

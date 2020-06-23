@@ -45,7 +45,7 @@ const WhoAmI = () => (
       <Intro>Hello, my name is</Intro>
       <HeroName>Kavan Samra</HeroName>
       <About>
-        I'm a software developer seeking a Junior Developer position.
+        I'm a software developer seeking a junior developer position.
       </About>
 
       <IconLocation />
