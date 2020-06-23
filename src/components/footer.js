@@ -1,8 +1,8 @@
-import styled from "styled-components"
-import React from "react"
-import { colors, breakpoints } from "../theme"
+import styled from "styled-components";
+import React from "react";
+import { colors, breakpoints } from "./styles/theme";
 
-import { IconGithub, IconTwitter, IconLinkedIn } from "../../icons/index"
+import { IconGithub, IconTwitter, IconLinkedIn } from "../icons/index";
 
 const Footer = () => (
   <StyledFooter>

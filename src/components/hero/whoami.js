@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { Section } from "../section"
-import { ButtonLink } from "../../../elements/Links"
-import { IconLocation } from "../../../../icons/index"
-import React from "react"
-import { fonts,colors, breakpoints } from "../../../theme"
+import styled from "styled-components";
+import { Section } from "../section";
+import { ButtonLink } from "../styles/elements/Links";
+import { IconLocation } from "../../icons/index";
+import React from "react";
+import { fonts,colors, breakpoints } from "../styles/theme";
 
 const Intro = styled.p`
   font-family: ${fonts.Roboto};

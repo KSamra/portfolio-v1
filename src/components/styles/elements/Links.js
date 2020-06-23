@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import styled from "styled-components"
 import React from "react"
-import { colors, breakpoints } from "../theme"
+import { colors, breakpoints } from "../theme";
 // Any reusable styled Links will go here.
 
 export const SLink = styled(Link)`

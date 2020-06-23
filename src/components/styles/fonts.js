@@ -1,40 +1,40 @@
 import { css } from "styled-components"
 
-import RobotoMono_Regular_WOFF from "../fonts/roboto-mono-v7-latin-regular.woff"
-import RobotoMono_Regular_WOFF2 from "../fonts/roboto-mono-v7-latin-regular.woff2"
+import RobotoMono_Regular_WOFF from "../../fonts/roboto-mono-v7-latin-regular.woff"
+import RobotoMono_Regular_WOFF2 from "../../fonts/roboto-mono-v7-latin-regular.woff2"
 
-import RobotoMono_Regular_Italic_WOFF from "../fonts/roboto-mono-v7-latin-italic.woff"
-import RobotoMono_Regular_Italic_WOFF2 from "../fonts/roboto-mono-v7-latin-italic.woff2"
+import RobotoMono_Regular_Italic_WOFF from "../../fonts/roboto-mono-v7-latin-italic.woff"
+import RobotoMono_Regular_Italic_WOFF2 from "../../fonts/roboto-mono-v7-latin-italic.woff2"
 
-import RobotoMono_500_WOFF from "../fonts/roboto-mono-v7-latin-500.woff"
-import RobotoMono_500_WOFF2 from "../fonts/roboto-mono-v7-latin-500.woff2"
+import RobotoMono_500_WOFF from "../../fonts/roboto-mono-v7-latin-500.woff"
+import RobotoMono_500_WOFF2 from "../../fonts/roboto-mono-v7-latin-500.woff2"
 
-import RobotoMono_500_Italic_WOFF from "../fonts/roboto-mono-v7-latin-500italic.woff"
-import RobotoMono_500_Italic_WOFF2 from "../fonts/roboto-mono-v7-latin-500italic.woff2"
+import RobotoMono_500_Italic_WOFF from "../../fonts/roboto-mono-v7-latin-500italic.woff"
+import RobotoMono_500_Italic_WOFF2 from "../../fonts/roboto-mono-v7-latin-500italic.woff2"
 
-import RobotoMono_700_WOFF from "../fonts/roboto-mono-v7-latin-700.woff"
-import RobotoMono_700_WOFF2 from "../fonts/roboto-mono-v7-latin-700.woff2"
-
-// -----------------------------------------------------------------------------------
-
-import Roboto_Regular_Woff from '../fonts/roboto-v20-latin-regular.woff';
-import Roboto_Regular_Woff2 from '../fonts/roboto-v20-latin-regular.woff2';
-
-import Roboto_Italic_Woff from '../fonts/roboto-v20-latin-italic.woff';
-import Roboto_Italic_Woff2 from '../fonts/roboto-v20-latin-italic.woff2';
-
-import Roboto_500_Woff from '../fonts/roboto-v20-latin-500.woff';
-import Roboto_500_Woff2 from '../fonts/roboto-v20-latin-500.woff2';
-
-import Roboto_700_Woff from '../fonts/roboto-v20-latin-700.woff';
-import Roboto_700_Woff2 from '../fonts/roboto-v20-latin-700.woff2';
+import RobotoMono_700_WOFF from "../../fonts/roboto-mono-v7-latin-700.woff"
+import RobotoMono_700_WOFF2 from "../../fonts/roboto-mono-v7-latin-700.woff2"
 
 // -----------------------------------------------------------------------------------
-import SFMono_Regular_Woff from '../fonts/SFMono-Regular.woff';
-import SFMono_Regular_Woff2 from '../fonts/SFMono-Regular.woff2';
 
-import SFMono_SemiBold_Woff from '../fonts/SFMono-Semibold.woff';
-import SFMono_SemiBold_Woff2 from '../fonts/SFMono-Semibold.woff2';
+import Roboto_Regular_Woff from '../../fonts/roboto-v20-latin-regular.woff';
+import Roboto_Regular_Woff2 from '../../fonts/roboto-v20-latin-regular.woff2';
+
+import Roboto_Italic_Woff from '../../fonts/roboto-v20-latin-italic.woff';
+import Roboto_Italic_Woff2 from '../../fonts/roboto-v20-latin-italic.woff2';
+
+import Roboto_500_Woff from '../../fonts/roboto-v20-latin-500.woff';
+import Roboto_500_Woff2 from '../../fonts/roboto-v20-latin-500.woff2';
+
+import Roboto_700_Woff from '../../fonts/roboto-v20-latin-700.woff';
+import Roboto_700_Woff2 from '../../fonts/roboto-v20-latin-700.woff2';
+
+// -----------------------------------------------------------------------------------
+import SFMono_Regular_Woff from '../../fonts/SFMono-Regular.woff';
+import SFMono_Regular_Woff2 from '../../fonts/SFMono-Regular.woff2';
+
+import SFMono_SemiBold_Woff from '../../fonts/SFMono-Semibold.woff';
+import SFMono_SemiBold_Woff2 from '../../fonts/SFMono-Semibold.woff2';
 
 
 

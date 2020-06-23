@@ -3,10 +3,10 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import WhoAmI from "../styles/blocks/sections/hero/whoami"
-import About from "../styles/blocks/sections/about"
-import Projects from "../styles/blocks/sections/projects/projects"
-import Contact from "../styles/blocks/sections/contact"
+import WhoAmI from "../components/hero/whoami";
+import About from "../components/about";
+import Projects from "../components/projects/projects";
+import Contact from "../components/contact";
 
 const IndexPage = ({ data }) => {
   const image = data.file.childImageSharp.resize.src

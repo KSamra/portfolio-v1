@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allProjectsJson.edges.forEach(({ node }) => {
     createPage({
       path: node.slug,
-      component: path.resolve("./src/styles/templates/project_layout.js"),
+      component: path.resolve("./src/components/styles/templates/project_layout.js"),
       context: {
         //Data passed to context is available in page queries as GraphQL variables
         slug: node.slug,

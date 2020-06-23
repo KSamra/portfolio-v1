@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { breakpoints } from "../styles/theme"
+import { breakpoints } from "../components/styles/theme";
 
 const Icon = () => (
   <svg
@@ -60,4 +60,4 @@ const LocationIcon = () => (
   </StyledLocationIcon>
 )
 
-export default LocationIcon
+export default LocationIcon;

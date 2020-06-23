@@ -1,7 +1,7 @@
-import { createGlobalStyle } from "styled-components"
-import {MonoFontFaces, RobotoFontFaces, SFMonoFonts} from "./fonts"
+import { createGlobalStyle } from "styled-components";
+import {MonoFontFaces, RobotoFontFaces, SFMonoFonts} from "./fonts";
 
-import { fonts } from "../styles/theme"
+import { fonts } from "../styles/theme";
 
 export const GlobalStyle = createGlobalStyle`
   

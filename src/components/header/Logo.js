@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { IconLogo } from "../../../icons/index"
+import { IconLogo } from "../../icons/index";
 import { Link } from "gatsby"
 
 const StyledLogo = styled.div`

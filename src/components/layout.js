@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { GlobalStyle } from "../styles/globalStyle"
+import { GlobalStyle } from "./styles/globalStyle";
 
 // import Header from "./header"
-import Header from "../styles/blocks/header/index"
-import Footer from "../styles/blocks/footer"
-import MobileNav from "../styles/blocks/mobileHeader/index"
-import { Center } from "../styles/theme"
+import Header from "./header/index";
+import Footer from "./footer";
+import MobileNav from "./mobileHeader/index";
+import { Center } from "./styles/theme";
 
 // import "./layout.css"
 

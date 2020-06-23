@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import React from "react"
 import { Link } from "gatsby"
-import Resume from "../../../../content/resume.pdf"
-import { colors } from "../../theme"
+import Resume from "../../../content/projects.json";
+import { colors } from "../styles/theme";
 
 const Menu = ({ isOpen, clickHandler }) => {
   return (

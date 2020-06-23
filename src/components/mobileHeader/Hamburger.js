@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import React from "react"
-import { colors } from "../../theme"
+import styled from "styled-components";
+import React from "react";
+import { colors } from "../styles/theme";
 
 const Hamburger = ({ menuOpen, clickHandler }) => {
   return (

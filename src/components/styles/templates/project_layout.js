@@ -1,15 +1,15 @@
 import styled from "styled-components"
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../layout";
 import { graphql } from "gatsby"
-import { Section } from "../blocks/sections/section"
-import { colors, breakpoints } from "../theme"
-import { ProjectImage } from "../blocks/sections/projects/images"
-import SEO from "../../components/seo"
+import { Section } from "../../section";
+import { colors, breakpoints } from "../theme";
+import { ProjectImage } from "../../projects/images";
+import SEO from "../../seo";
 
-import { IconLink } from "../blocks/sections/projects/projects"
+import { IconLink } from "../../projects/projects";
 
-import { IconExternal, IconGithub } from "../../icons/index"
+import { IconExternal, IconGithub } from "../../../icons/index";
 
 /**
  *

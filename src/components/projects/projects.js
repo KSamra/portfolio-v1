@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { Section, SectionTitle } from "../section"
 import React from "react"
-import { colors, breakpoints } from "../../../theme"
-import { IconGithub, IconExternal } from "../../../../icons/index"
+import { colors, breakpoints } from "../styles/theme";
+import { IconGithub, IconExternal } from "../../icons/index";
 import { ProjectImage } from "./images"
-import { ButtonLink } from "../../../elements/Links"
+import { ButtonLink } from "../styles/elements/Links";
 import { Link } from "gatsby"
 /*
  * This component is built using `gatsby-image` to automatically serve optimized

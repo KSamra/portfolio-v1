@@ -1,11 +1,11 @@
-import React, { useState } from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
-import { breakpoints } from "../../theme"
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import { breakpoints } from "../styles/theme";
 import Hamburger from "./Hamburger"
 import Menu from "./Menu"
 import Backdrop from "./Backdrop"
-import { IconLogo } from "../../../icons/index"
+import { IconLogo } from "../../icons/index";
 
 const MobileNav = () => {
   const [menuOpen, setMenuOpen] = useState(false)

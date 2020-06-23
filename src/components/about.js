@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import { Section, SectionTitle } from "./section"
-import { font_sizes, colors, breakpoints } from "../../theme"
+import React from "react";
+import styled from "styled-components";
+import { Section, SectionTitle } from "./section";
+import { font_sizes, colors, breakpoints } from "./styles/theme";
 
 const About = () => {
   return (

@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import { ListLink } from "../../elements/Links"
+import { ListLink } from "../styles/elements/Links";
 import React from "react"
-import Resume from "../../../../content/resume.pdf"
-import { colors } from "../../theme"
+import Resume from "../../../content/resume.pdf";
+import { colors } from "../styles/theme"
 
 const NavWrapper = styled.nav`
   display: flex;

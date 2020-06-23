@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import React from "react"
 import { Section, SectionTitle } from "./section"
-import { ButtonLink } from "../../elements/Links"
-import { colors, breakpoints } from "../../theme"
+import { ButtonLink } from "./styles/elements/Links";
+import { colors, breakpoints } from "./styles/theme";
 
 const Contact = props => {
   return (

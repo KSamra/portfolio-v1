@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { SLink } from "../../elements/Links"
+import { SLink } from "../styles/elements/Links"
 import React from "react"
 
 const Text = styled.h1`

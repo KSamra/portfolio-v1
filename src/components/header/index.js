@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Nav from "./Nav"
 import Title from "./Title"
 import Logo from "./Logo"
-import { breakpoints } from "../../theme"
+import { breakpoints } from "../styles/theme";
 
 const Header = styled.header`
   display: none;
