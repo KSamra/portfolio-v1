@@ -19,7 +19,7 @@
     "link": "",
     "tech": ["React.js", "Node.js", "AWS Lambda", "DynamoDB"],
     "slug": "share-yourself-artists",
-    "learned": "Project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing API's hosted on AWS Lambda, and enabling authentication via AWS Cognito. "
+    "learned": "Project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing RESTful API's hosted on AWS Lambda, and enabling user authentication via AWS Cognito."
   },
   {
     "id": 3,
@@ -30,6 +30,6 @@
     "link": "https://startup-analysis-681e1.web.app/",
     "tech": ["Python", "Pandas", "Bokeh", "HTML"],
     "slug": "startup-analysis",
-    "learned": "Through working on this project I learned how powerful and simple tools like Pandas and NumPy are for data analysis projects. The data visualization library Bokeh was chosen in order to make the visualizations interactive. This project has made me interested in working on more data visualization projects in the future, especially since I am now much more experienced with CSS."
+    "learned": "Through working on this project I learned how powerful and simple tools like Pandas and NumPy are for data analysis projects. The data visualization library Bokeh was chosen in order to make the visualizations interactive. This project has made me interested in working on more data visualization projects in the future, especially since I am now much more experienced with HTML/CSS."
   }
 ]

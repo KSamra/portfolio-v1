@@ -6,4 +6,6 @@ https://www.kavansamra.com
 
 ![Site Landing Page](/src/images/home.jpg "Landing page")
 
+Built with React and GatsbyJS.
+
 content additions in progress...
