@@ -8,7 +8,7 @@
     "link": "",
     "tech": ["React.js", "Node.js", "Apollo-GraphQL", "MongoDB"],
     "slug": "pokedex",
-    "learned": "Working on this project taught me the benefits/drawbacks of using GraphQL over REST and how to scrape for missing data. The backend is a GraphQL API made using Apollo Server that connects to a MongoDB database. Through building the frontend I learned the various ways to use CSS in React (I chose styled-components) along with modern CSS patterns such as Flexbox and Grid."
+    "learned": "Through working on this project I learned the benefits/drawbacks of using GraphQL over REST. I also gained some experience in scraping for missing data in the event that the existing datasource is fragmented. The backend is a GraphQL API made using Apollo Server that connects to a MongoDB database. Through building the frontend I learned the various ways to utilize CSS in React, along with learning modern CSS patterns such as Flexbox and Grid."
   },
   {
     "id": 2,
@@ -19,12 +19,12 @@
     "link": "",
     "tech": ["React.js", "Node.js", "AWS Lambda", "DynamoDB"],
     "slug": "share-yourself-artists",
-    "learned": "Project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing RESTful API's hosted on AWS Lambda, and enabling user authentication via AWS Cognito."
+    "learned": "A project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing RESTful API's hosted on AWS Lambda, and enabling user authentication via AWS Cognito. When I began this project I didn't know much about configuring cloud services like AWS so it was a great experience in learning how to read documentation effectively. "
   },
   {
     "id": 3,
     "title": "Startup Analysis",
-    "desc": "Data Visualization project attempting to answer a number of questions about startup investments. Data was sourced from Crunchbase up to 2015.",
+    "desc": "Data Visualization project attempting to answer a number of questions about startup investments. Data was sourced from Crunchbase up to the year 2015.",
     "image": "startup_analysis.png",
     "github": "https://github.com/KSamra/Successful-Startups",
     "link": "https://startup-analysis-681e1.web.app/",
