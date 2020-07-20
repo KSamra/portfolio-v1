@@ -16,7 +16,7 @@
     "desc": "An art sharing platform where users can upload their artwork to share with others. Users can optionally purchase credits to have their artwork sponsored or simply use the free-tier.",
     "image": "SYA.png",
     "github": "https://github.com/KSamra/sya-react-aws",
-    "link": "",
+    "link": "https://sya-app.firebaseapp.com",
     "tech": ["React.js", "Node.js", "AWS Lambda", "DynamoDB"],
     "slug": "share-yourself-artists",
     "learned": "A project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing RESTful API's hosted on AWS Lambda, and enabling user authentication via AWS Cognito. When I began this project I didn't know much about configuring cloud services like AWS so it was a great experience in learning how to read documentation effectively. "
