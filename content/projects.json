@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Pokédex",
+    "year": "2020",
     "desc": "A dashboard providing information on all generations of Pokémon. Search for any Pokémon and learn more about their stats, strengths, weaknesses and more.",
     "image": "Pokedex.png",
     "github": "https://github.com/KSamra/pokedex",
@@ -10,20 +11,11 @@
     "slug": "pokedex",
     "learned": "Through working on this project I learned the benefits/drawbacks of using GraphQL over REST. I also gained some experience in scraping for missing data in the event that the existing datasource is fragmented. The backend is a GraphQL API made using Apollo Server that connects to a MongoDB database. Through building the frontend I learned the various ways to utilize CSS in React, along with learning modern CSS patterns such as Flexbox and Grid."
   },
+  
   {
     "id": 2,
-    "title": "Share Yourself Artists",
-    "desc": "An art sharing platform where users can upload their artwork to share with others. Users can optionally purchase credits to have their artwork sponsored or simply use the free-tier.",
-    "image": "SYA.png",
-    "github": "https://github.com/KSamra/sya-react-aws",
-    "link": "https://sya-app.firebaseapp.com",
-    "tech": ["React.js", "Node.js", "AWS Lambda", "DynamoDB"],
-    "slug": "share-yourself-artists",
-    "learned": "A project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing RESTful API's hosted on AWS Lambda, and enabling user authentication via AWS Cognito. When I began this project I didn't know much about configuring cloud services like AWS so it was a great experience in learning how to read documentation effectively. "
-  },
-  {
-    "id": 3,
     "title": "Startup Analysis",
+    "year": "2019",
     "desc": "Data Visualization project attempting to answer a number of questions about startup investments. Data was sourced from Crunchbase up to the year 2015.",
     "image": "startup_analysis.png",
     "github": "https://github.com/KSamra/Successful-Startups",
@@ -31,5 +23,17 @@
     "tech": ["Python", "Pandas", "Bokeh", "HTML"],
     "slug": "startup-analysis",
     "learned": "Through working on this project I learned how powerful and simple tools like Pandas and NumPy are for data analysis projects. The data visualization library Bokeh was chosen in order to make the visualizations interactive. This project has made me interested in working on more data visualization projects in the future, especially since I am now much more experienced with HTML/CSS."
+  },
+  {
+    "id": 3,
+    "title": "Share Yourself Artists",
+    "year": "2018",
+    "desc": "An art sharing platform where users can upload their artwork to share with others. Users can optionally purchase credits to have their artwork sponsored or simply use the free-tier.",
+    "image": "SYA.png",
+    "github": "https://github.com/KSamra/sya-react-aws",
+    "link": "https://sya-app.firebaseapp.com",
+    "tech": ["React.js", "Node.js", "AWS Lambda", "DynamoDB"],
+    "slug": "share-yourself-artists",
+    "learned": "A project built as part of my Software Engineering course. I was responsible for configuring, building, and deploying the backend of the website. This involved setting up a cloud-hosted database, writing RESTful API's hosted on AWS Lambda, and enabling user authentication via AWS Cognito. When I began this project I didn't know much about configuring cloud services like AWS so it was a great experience in learning how to read documentation effectively. "
   }
 ]

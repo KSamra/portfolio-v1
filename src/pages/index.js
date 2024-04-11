@@ -32,6 +32,7 @@ export const query = graphql`
         node {
           id
           title
+          year
           image
           github
           tech

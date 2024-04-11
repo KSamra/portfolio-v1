@@ -22,7 +22,7 @@ const Projects = ({ projects }) => {
     return (
       <ProjectContainer key={element.node.id}>
         <Link to={`/${element.node.slug}`} aria-label="Go to Project Page">
-          <ProjectTitle>{element.node.title}</ProjectTitle>
+          <ProjectTitle>{element.node.title} - {element.node.year}</ProjectTitle>
         </Link>
         <FlexContainer>
           <ImageContainer>
