@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "company": "Abby Connect",
+        "link": "https://abby.com/",
+        "year_start": "2020",
+        "year_end": "2023",
+        "month_start": "",
+        "month_end": "",
+        "tech": [],
+        "slug": "abby",
+        "description": "",
+        "title": "Software Engineer"
+
+    }
+]
