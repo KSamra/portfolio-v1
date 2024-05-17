@@ -9,7 +9,12 @@ const WorkExperience = () => {
   const { company } = useWorkExperience();
 
   return (
-      <h1>{company}</h1>
+      <Section id="experience">
+        <SectionTitle>
+          Experience
+          <SectionTitle.Line/>
+        </SectionTitle>
+      </Section>
   )
 }
 
