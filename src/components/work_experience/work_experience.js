@@ -37,17 +37,10 @@ const WorkExperience = () => {
             <li>Collaborated with Sales, Marketing, and Customer Success departments to ensure product development timelines and customer needs were in sync.</li>
             <li>Provided mentorship to others seeking a position in the Software department.</li>
             <li>Built custom integrations for VIP clients, allowing them to integrate our products with their specific tech stack.</li>
+            <li>Rewrote legacy software with an emphasis on reliabilty and performance.</li>
             
           </UL>
           
-          {/* <FlexContainer>
-            <ImageContainer>
-              {ProjectImage("SYA.png")}
-            </ImageContainer>
-            <Description>
-              <p>Testing</p>
-            </Description>
-          </FlexContainer> */}
         </JobContainer>
       </Section>
   )
