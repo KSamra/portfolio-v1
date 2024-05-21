@@ -22,7 +22,7 @@ const Projects = ({ projects }) => {
     return (
       <ProjectContainer key={element.node.id}>
         <Link to={`/${element.node.slug}`} aria-label="Go to Project Page">
-          <ProjectTitle>{element.node.title} - {element.node.year}</ProjectTitle>
+          <ProjectTitle>{element.node.title}</ProjectTitle>
         </Link>
         <FlexContainer>
           <ImageContainer>
@@ -85,7 +85,7 @@ const ProjectTitle = styled.h3`
   /* color: rgb(204, 214, 246); */
   display: inline-flex;
   color: ${colors.subtext};
-  font-weight: 500;
+  font-weight: 600;
   transition: color 100ms ease;
 
   :hover {

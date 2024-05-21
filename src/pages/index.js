@@ -45,6 +45,7 @@ export const query = graphql`
       }
     }
 
+
     allExperienceJson {
       edges {
         node {
@@ -61,6 +62,7 @@ export const query = graphql`
         }
       }
     }
+ 
 
     file(relativePath: { eq: "home.jpg" }) {
       childImageSharp {
@@ -73,3 +75,5 @@ export const query = graphql`
     }
   }
 `
+
+
