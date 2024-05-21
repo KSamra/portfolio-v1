@@ -17,7 +17,7 @@ const About = () => {
       <Description>
       After graduation, I worked at 
       <ExternalLink href="https://abby.com/" rel="noreferrer noopener nofollow" aria-label="Abby Connect"> <span>Abby Connect</span> </ExternalLink>
-      where I built backend systems to support business operations, rewrote legacy software with a focus on reliability and efficiency, and took on a key leadership positiong while providing mentorship to others.
+      where I built backend systems to support business operations, rewrote legacy software with a focus on reliability and efficiency, and took on a key leadership position while providing mentorship to others.
       </Description>
       <Description>
       Outside of programming my hobbies include photography, cars, competitive video games, and traveling.

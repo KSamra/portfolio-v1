@@ -33,7 +33,6 @@ const WorkExperience = () => {
 
           <UL>
             <li>Planned, designed, and developed solutions to support business operations. </li>
-            <li>Promoted to Lead Software Engineer in my second year.</li>
             <li>Collaborated with Sales, Marketing, and Customer Success departments to ensure product development timelines and customer needs were in sync.</li>
             <li>Provided mentorship to others seeking a position in the Software department.</li>
             <li>Built custom integrations for VIP clients, allowing them to integrate our products with their specific tech stack.</li>
