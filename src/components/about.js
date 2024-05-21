@@ -12,7 +12,7 @@ const About = () => {
       </SectionTitle>
       <Description>
       I began my programming journey in 2014 with an introductory course in Visual Basic where I discovered the power of programming: the ability to build something with seemingly nothing more than logical statements, control flow, and abstraction. 
-      This interest in programming led me to the University of California, Santa Cruz where I pursued my studies in Computer Science, graduating with a B.S in 2019. During my time in University, I took a particular interest in backend development, system design, and statically typed languages.
+      This interest led me to the University of California, Santa Cruz where I pursued my studies in Computer Science, graduating with a B.S in 2019. During my time in University, I took a particular interest in backend development, system design, and statically typed languages.
       </Description>
       <Description>
       After graduation, I worked at 
