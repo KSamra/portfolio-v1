@@ -14,8 +14,7 @@ const Contact = props => {
       <h3 style={{ color: `${colors.subtext}` }}>Let's get in touch!</h3>
       <Message>
         I am actively seeking a full time position and would love to hear from
-        you about any opportunities. I'm also open to relocation so if you're in
-        another city don't hesitate to write!
+        you about any opportunities.
       </Message>
       <Section.Spacer />
       <ButtonLink

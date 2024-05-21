@@ -28,7 +28,7 @@ export const ListLink = ({ to, children, color }) => (
   </li>
 )
 
-//If internal, use Gatsby Link. If not internal, use a normal achor
+//If linking internal, use Gatsby Link. If not internal, use a normal <a>
 export const ButtonLink = ({ to, internal, label }) => {
   if (internal) {
     return (
@@ -55,6 +55,33 @@ export const ButtonLink = ({ to, internal, label }) => {
     </Button>
   )
 }
+
+// const ExternalLink = ({to, label }) => {
+//   return (
+//     <a
+//       href={to}
+//       rel="noreferrer noopener nofollow"
+//       aria-label={label}
+//       >
+//       <span> {label}</span>
+//       </a>
+//   )
+// }
+
+// export const StyledExternalLink = styled(ExternalLink)`
+//   text-decoration: none;
+//   cursor: cell;
+//   color: ${colors.primary};
+
+//   :hover span{
+//     border-bottom: 1px solid ${colors.primary};
+//   }
+// `;
+
+
+
+
+
 
 const Button = styled.div`
   background: transparent;

@@ -11,10 +11,18 @@ const About = () => {
         <SectionTitle.Line />
       </SectionTitle>
       <Description>
-        I recently graduated from the University of California, Santa Cruz with
-        a B.S in Computer Science and am looking to join a team of awesome developers. Most of my experience relates to the web and
-        the M.E.R.N stack but I'm a quick learner and am ready to adopt any stack that is required.
+      I began my programming journey in 2014 with an introductory course in Visual Basic where I discovered the power of programming: the ability to build something with seemingly nothing more than logical statements, control flow, and abstraction. 
+      This interest led me to the University of California, Santa Cruz where I pursued my studies in Computer Science, graduating with a B.S in 2019. During my time in University, I took a particular interest in backend development, system design, and statically typed languages.
       </Description>
+      <Description>
+      After graduation, I worked at 
+      <ExternalLink href="https://abby.com/" rel="noreferrer noopener nofollow" aria-label="Abby Connect"> <span>Abby Connect</span> </ExternalLink>
+      where I built backend systems to support business operations, rewrote legacy software with a focus on reliability and efficiency, and took on a key leadership positiong while providing mentorship to others.
+      </Description>
+      <Description>
+      Outside of programming my hobbies include photography, cars, competitive video games, and traveling.
+      </Description>
+
       <ListArea>
         <ColumnFlex>
           <SubHeading>Languages</SubHeading>
@@ -22,7 +30,8 @@ const About = () => {
             <li>JavaScript</li>
             <li>Python</li>
             <li>C/C++</li>
-            <li>Swift</li>
+            <li>Java</li>
+            <li>Rust</li>
             <li>HTML</li>
             <li>CSS/Sass</li>
           </List>
@@ -93,4 +102,14 @@ const ColumnFlex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+
+const ExternalLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: ${colors.primary};
+
+  :hover span{
+    border-bottom: 1px solid ${colors.primary};
+  }
 `

@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import React from "react";
 import { colors, breakpoints } from "./styles/theme";
+//import { StyledExternalLink } from "./styles/elements/Links";
 
 import { IconGithub, IconTwitter, IconLinkedIn } from "../icons/index";
 
 const Footer = () => (
   <StyledFooter>
     <SiteDesc>
-      <p>Built by Kavan Samra</p>
+      <p>Built by Kavan Samra. Design inspired by
+        <ExternalLink href="https://v4.brittanychiang.com/" rel="noreferrer noopener nofollow" aria-label="Brittany Chiang"> <span>Brittany Chiang</span></ExternalLink>
+      </p>
       <SourceLink
         href="https://github.com/KSamra/portfolio-v1"
         aria-label="View Source Code"
@@ -90,5 +93,15 @@ const Flex = styled.div`
 
   a {
     text-decoration: none;
+  }
+`
+
+const ExternalLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+  color: ${colors.primary};
+
+  :hover span{
+    border-bottom: 1px solid ${colors.primary};
   }
 `

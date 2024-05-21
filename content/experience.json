@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "company": "Abby Connect",
+        "link": "https://abby.com/",
+        "year_start": "2020",
+        "year_end": "2023",
+        "month_start": "December",
+        "month_end": "June",
+        "tech": ["Salesforce", "Javascript", "Python", "Twilio"],
+        "slug": "abby",
+        "description": "",
+        "title": "Lead Software Engineer"
+
+    }
+]

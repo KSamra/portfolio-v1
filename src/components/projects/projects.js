@@ -85,7 +85,7 @@ const ProjectTitle = styled.h3`
   /* color: rgb(204, 214, 246); */
   display: inline-flex;
   color: ${colors.subtext};
-  font-weight: 500;
+  font-weight: 600;
   transition: color 100ms ease;
 
   :hover {
